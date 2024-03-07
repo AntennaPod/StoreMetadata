@@ -1,0 +1,31 @@
+AntennaPod er en podcast manager og spiller som gir deg umiddelbar tilgang til millioner av gratis og betalte podcaster, fra selvstendige podcaster til store publisering forlag som foreksempel: BBC, NPR and CNN. Legg til, importer og eksporter deres feeds helt enkelt ved å benytte iTunes podcast databasen, OPML filer eller enkle RSS URLer.
+Last ned, strømm eller sett episoder og kose deg med dem senere med forskjellige avspillingshastigheter, støtte for kapitler og en insovings-timer.
+Spare tid, batteri og databruk med automatisert nedlasting av episoder (til ønskete tider, intervaller og trådløse nettverk) og sletting av episoder (basert på dine favoritter og slettings instillinger).
+
+Lagd av podcast-entusiaster, AntennaPod er gratis på alle måter: åpent kildekode, ingen kostnader, ingen reklamer.
+
+<b>Importer, organiser og spille av</b>
+• Forvalte dine avspillinger fra alle steder: hjemmeskjerm verktøy, system-meldinger og ørepropp og blåtann instillinger.
+&#8226; Legg til og importer strømmer fra mapper fra Apple Podcasts, gPodder.net, fyyd or Podkast indeks mapper, OPML filer og linker fra RSS eller ATOM.
+• Enjoy listening your way with adjustable playback fart, kapittel støtte, remembered playback posisjon og en avansert sleep timer (shake to reset, lower volume)
+• Access password-protected feeds and episodes
+
+<b>Keep track, del & appreciate</b>
+• Keep track of the best of the best by marking episodes as favourites
+• Finn den ene episoden igjennom avspillingshistorie eller ved å søke etter titler og show notater.
+• Share episodes and feeds through advanced social media and email options, the gPodder.net services and via OPML export
+
+<b>Control the system</b>
+• Take control over automated downloading: choose feeds, exclude mobile networks, select specific WiFi networks, require the phone to be charging and set times or intervals
+• Manage lagring av setting mengden av cached episodes, smart sletting og velg din foretrukket sted
+• Adapt to your environment using the lyst eller mørkt tema
+• Back-up your subscriptions with the gPodder.net integrering og OPML export
+
+<b>Bli med i AntennaPod samfunnet!</b>
+AntennaPod er under aktiv utvikling av frivillige. Du kan også bidra, med kode eller kommentarer!
+
+Medlemene våres i forumet kommer gjerne til å svare på alle spørsmål du kanskje kommer til å ha. Ta gjerne en titt innom for å snakke om nye funksjoner og podcasting generelt.
+https://forum.antennapod.org/
+
+Transifex is the place to help with translations:
+https://www.transifex.com/antennapod/antennapod

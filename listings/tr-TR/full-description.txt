@@ -1,0 +1,31 @@
+AntennaPod, bağımsız podcast yayıncılarından, BBC, NPR ve CNN gibi büyük yayınevlerine kadar milyonlarca ücretsiz ve ücretli podcast'e anında erişmenizi sağlayan bir podcast yöneticisi ve oynatıcısıdır. Apple Podcasts veritabanını, OPML dosyalarını veya basit RSS URL'lerini kullanarak beslemelerini sorunsuz bir şekilde ekleyin, içe ve dışa aktarın.
+Bölümleri indirin, yayınlayın veya sıraya alın ve ayarlanabilir oynatma hızları, bölüm desteği ve uyku zamanlayıcısı ile istediğiniz gibi keyfini çıkarın.
+Bölümleri indirmek (süre, aralık ve WiFi ağlarını seçebilirsiniz) ve bölümleri silmek (favorilerinize ve gecikme ayarlarınıza göre) için güçlü otomasyon kontrolleriyle çabanızdan, pil gücünden ve mobil veri kullanımından tasarruf edin.
+
+Podcast meraklıları tarafından yapılan AntennaPod, kelimenin tam anlamıyla ücretsizdir: açık kaynak, maliyet yok, reklam yok.
+
+<b>İçe aktar, düzenle ve oynat</b>
+• Oynatmayı her yerden yönetin: ana ekran widget'ı, sistem bildirimi, kulak tıkacı ve bluetooth kontrolleri
+• Apple Podcasts, gPodder.net, fyyd veya Podcast Index dizinleri, OPML dosyaları ve RSS veya Atom bağlantıları aracılığıyla akışları ekleyin ve içe aktarın
+• Ayarlanabilir oynatma hızı, bölüm desteği, hatırlanan oynatma konumu ve gelişmiş uyku zamanlayıcısı (sıfırlamak için sallayın, sesi kısın) ile istediğiniz gibi dinlemenin keyfini çıkarın
+• Parola korumalı beslemeler ve bölümler erişimi
+
+<b>Takipte kalın, paylaşın ve takdir edin</b>
+• Bölümleri favori olarak işaretleyerek en iyinin en iyisini takip edin
+• Oynatma geçmişinde veya başlıkları ve gösteri notlarını arayarak o bölümü bulun
+• Bölümleri ve yayınları gelişmiş sosyal medya ve e-posta seçenekleri, gPodder.net hizmetleri ve OPML dışa aktarma yoluyla paylaşın
+
+<b>Sistemi kontrol et</b>
+• Otomatik indirmelerde kontrolü elinize alın: beslemeleri seçin, mobil ağları hariç tutun, belirli WiFi ağlarını seçin, telefonun şarj olmasını zorunlu kılın ve saatleri veya aralıkları ayarlayın
+• Önbelleğe alınan bölümlerin miktarını ayarlayarak, akıllı silme ve tercih ettiğiniz konumu seçerek depolamayı yönetin
+• Açık ve koyu temayı kullanarak ortamınıza uyum sağlayın
+• Aboneliklerinizi gPodder.net entegrasyonu ve OPML dışa aktarımıyla yedekleyin
+
+<b>AntennaPod topluluğuna katılın!</b>
+AntennaPod gönüllüler tarafından etkin olarak geliştirilmektedir. Siz de kodla veya yorumla çok katkıda bulunabilirsiniz!
+
+Dost canlısı forum üyelerimiz, sahip olduğunuz her soruda size yardımcı olmaktan mutluluk duyar. Genel olarak özellikleri ve podcasting'i de tartışmaya davetlisiniz.
+https://forum.antennapod.org/
+
+Transifex, çeviriler ile yardımcı olacak yerdir:
+https://www.transifex.com/antennapod/antennapod

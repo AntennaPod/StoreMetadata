@@ -1,0 +1,31 @@
+AntennaPod is a podcast manager and player that gives you instant access to millions of free and paid podcasts, from independent podcasters to large publishing houses such as the BBC, NPR and CNN. Add, import and export their feeds hassle-free using the Apple Podcasts database, OPML files or simple RSS URLs.
+Unduh, stream, atau antri episode dan nikmati sesuai keinginan Anda dengan kecepatan pemutaran kembali yang dapat diatur, dukungan bab, dan pengatur waktu tidur.
+Hemati usaha, daya baterai dan data seluler dengan kontrol otomatisasi yang canggih untuk mengunduh episode (tentukan waktu, selangan waktu, dan jaringan WiFi tertentu) dan menghapus episode (berdasarkan daftar favorit Anda dan setelan penundaan).
+
+Dibuat oleh para penggemar podcast, AntennaPod gratis dalam segala makna yang dimaksud: sumber yang terbuka, tanpa biaya, dan tanpa iklan.
+
+<b>Impor, atur dan mainkan</b>
+• Kelola pemutaran kembali dari manapun: widget layar utama, notifikasi sistem, serta pengontrolan earphone dan bluetooth
+• Add and import feeds via the Apple Podcasts, gPodder.net, fyyd or Podcast Index directories, OPML files and RSS or Atom links
+• Nikmati dan dengarkan sesuai keinginan Anda dengan kecepatan pemutaran kembali yang dapat diatur, dukungan bab, posisi pemutaran kembali yang diingat, dan pengatur waktu tidur yang canggih (goyang untuk atur ulang, kecilkan suara)
+• Akses feed dan episode yang dilindungi kata sandi
+
+<b>Pantau, bagikan & hargai</b>
+• Lacak yang terbaik dari yang terbaik dengan menandai episode sebagai favorit
+• Temukan satu episode itu melalui riwayat pemutaran atau dengan mencari judul dan catatan acara
+• Bagikan episode dan umpan melalui opsi sosial media dan email yang canggih, layanan-layanan gPodder.net, serta melalui ekspor OPML
+
+<b>Mengontrol sistem</b>
+• Kendalikan pengunduhan otomatis: pilih umpan, kecualikan jaringan seluler, pilih jaringan WiFi yang spesifik, haruskan ponsel untuk dicas, dan atur waktu atau selangan waktu tertentu
+• Kelola penyimpanan dengan mengatur banyaknya episode yang tercached, penghapusan pintar, dan pemilihan lokasi Anda yang diinginkan
+• Beradaptasi dengan lingkungan Anda menggunakan tema terang dan gelap
+• Cadangkan langganan Anda dengan integrasi gPodder.net dan ekspor OPML
+
+<b>Bergabunglah dengan komunitas AntenaPod!</b>
+AntennaPod sedang dalam pengembangan aktif oleh para sukarelawan. Anda dapat berkontribusi juga, dengan kode atau dengan komentar!
+
+Anggota forum kami akan dengan senang menjawab pertanyaan apa pun yang Anda miliki. Anda juga diundang untuk mendiskusikan fitur-fitur serta podcasting secara umum.
+https://forum.antennapod.org/
+
+Transifex adalah tempat untuk membantu terjemahan:
+https://www.transifex.com/antennapod/antennapod
