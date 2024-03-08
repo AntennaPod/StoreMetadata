@@ -18,7 +18,7 @@ langs_and_fonts = {
 
 
 def generate_text(text, font):
-    print(text)
+    print("  " + text.replace("\n", "\\n"))
     os.system(
         "convert -size 1698x750 xc:none -gravity Center -pointsize 130 -fill '#167df0' -font "
         + font
@@ -28,7 +28,7 @@ def generate_text(text, font):
 
 
 def generate_tablet_text(text, font):
-    print(text)
+    print("  " + text.replace("\n", "\\n"))
     os.system(
         "convert -size 1730x350 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
         + font
@@ -67,6 +67,7 @@ def two_phones(text, raw_screenshots_path, output_file, font):
 
 
 def generate_screenshots(language, font):
+    print(language)
     with open('strings/' + language + '.json') as textDefinitions:
         texts = json.load(textDefinitions)
 
