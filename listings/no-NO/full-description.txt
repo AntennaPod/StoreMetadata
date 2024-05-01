@@ -27,5 +27,5 @@ AntennaPod er under aktiv utvikling av frivillige. Du kan også bidra, med kode 
 Medlemene våres i forumet kommer gjerne til å svare på alle spørsmål du kanskje kommer til å ha. Ta gjerne en titt innom for å snakke om nye funksjoner og podcasting generelt.
 https://forum.antennapod.org/
 
-Transifex is the place to help with translations:
-https://www.transifex.com/antennapod/antennapod
+Bistå oversettelsen på
+https://hosted.weblate.org/projects/antennapod/
