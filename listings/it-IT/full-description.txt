@@ -1,6 +1,6 @@
-AntennaPod è un riproduttore e gestore di podcast che permette l'accesso immediato a milioni di podcast gratuiti e a pagamento, dai podcaster indipendenti alle grandi emittenti come BBC, NPR e CNN. Aggiungi, importa ed esporta i feed in modo semplice tramite il database di Apple Podcast, i file OPML o i semplici indirizzi RSS.
-Scarica, accoda o ascolta in streaming gli episodi e goditeli come preferisci grazie alla velocità di riproduzione modificabile, al supporto ai capitoli e al timer di spegnimento.
-Risparmia fatica, carica della batteria e dati grazie ai potenti controlli automatizzati per il download degli episodi (orari specifici, intervalli di tempo e reti WiFi specifiche) e l'eliminazione degli episodi (gestione dei preferiti e tempi di cancellazione).
+AntennaPod è un lettore e gestore di podcast che ti permette di accedere immediatamente a milioni di podcast gratuiti e a pagamento, dai podcaster indipendenti alle grandi emittenti come BBC, NPR e CNN. Aggiungi, importa ed esporta i feed in modo semplice tramite il database di Apple Podcast, i file OPML o i semplici indirizzi RSS.
+Scarica, ascolta in streaming o metti in coda gli episodi e goditeli come preferisci grazie alla velocità di riproduzione modificabile, al supporto ai capitoli e al timer di spegnimento.
+Risparmia fatica, carica della batteria e dati grazie ai potenti controlli automatizzati per il download degli episodi (specificando orari, intervalli di tempo e reti Wi-Fi) e l'eliminazione degli episodi (in base alle tue impostazioni su preferiti e tempi di cancellazione).
 
 Creato da appassionati di podcast, AntennaPod è libero in tutti i sensi: open source, gratuito e senza pubblicità.
 
@@ -12,19 +12,19 @@ Creato da appassionati di podcast, AntennaPod è libero in tutti i sensi: open s
 
 <b>Tieni traccia, condividi & ricerca</b>
 • Tieni traccia dei migliori episodi di sempre segnandoli come preferiti
-• Trova proprio l'episodio che cercavi grazie alla ricerca nella cronologia, nei titoli e nelle note degli episodi
-• Condividi gli episodi e i feed tramite opzioni avanzate di condivisione via social o email, i servizi di gPodder.net o l'esportazione OPML.
+• Trova proprio l'episodio che cercavi grazie alla cronologia delle riproduzioni o cercando nei titoli e nelle note degli episodi
+• Condividi episodi e feed tramite opzioni avanzate di condivisione via social o email, i servizi di gPodder.net o esportando in formato OPML
 
 <b>Controlla il sistema</b>
-• Gestisci il download automatico: puoi selezionare i feed, escludere le reti mobili, utilizzare reti WiFi specifiche, impostare il download solo quando in carica e scaricare ad orari o intervalli selezionati.
-• Gestisci lo spazio impostando il numero massimo di episodi da tenere, la cancellazione intelligente e il percorso in cui scaricare i file.
-• Adattalo alle tue preferenze grazie ai temi chiaro o scuro.
-• Effettua il backup delle sottoscrizioni grazie all'integrazione con gPodder.net e all'esportazione in OPML.
+• Gestisci il download automatico: puoi selezionare i feed, escludere le reti mobili, utilizzare reti Wi-Fi specifiche, impostare il download solo quando in carica e scaricare ad orari o intervalli selezionati
+• Gestisci lo spazio impostando il numero massimo di episodi da tenere, la cancellazione intelligente e il percorso in cui scaricare i file
+• Adatta l'interfaccia alle tue preferenze grazie ai temi chiaro o scuro
+• Effettua il backup delle iscrizioni grazie all'integrazione con gPodder.net e all'esportazione in formato OPML
 
 <b>Partecipa alla community di AntennaPod!</b>
 AntennaPod è sviluppato da volontari. Anche tu puoi contribuire, con il codice o con dei commenti!
 
-I simpatici membri del nostro forum sono felici di rispondere a qualsiasi domanda tu possa avere. Ti invitiamo anche a discutere di funzionalità e podcasting.
+I simpatici membri del nostro forum sono felici di rispondere a qualsiasi domanda tu possa avere. Ti invitiamo anche a discutere di funzionalità e di podcasting in generale.
 https://forum.antennapod.org/
 
 Transifex è dove puoi contribuire alla traduzione:
