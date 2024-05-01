@@ -46,7 +46,8 @@ function resetDatabase() {
     echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?><map>
         <string name='prefTheme'>$theme</string>
         <long name='de.danoeh.antennapod.preferences.currentlyPlayingMedia' value='1' />
-        <long name='FeedMedia.PrefMediaId' value='2432' />
+        <long name='de.danoeh.antennapod.preferences.lastPlayedFeedMediaId' value='2432' />
+        <boolean name='prefEpisodeCover' value='false' />
         </map>" > tmp
     adb push tmp /data/data/de.danoeh.antennapod.debug/shared_prefs/de.danoeh.antennapod.debug_preferences.xml
     rm tmp
@@ -75,36 +76,41 @@ function switchLanguage() {
 
 function createScreenshots() {
     language=$1
-    mkdir -p "raw/$language"
+    folder="app/src/main/play/screenshots/raw"
+    mkdir -p "$folder/$language"
     switchLanguage $language
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "SubscriptionFragment"
-    screenshot "raw/$language/00.png"
+    screenshot "$folder/$language/00.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "QueueFragment"
     sleep 1
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --ez "open_player" "true"
-    screenshot "raw/$language/01.png"
+    screenshot "$folder/$language/01.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "QueueFragment"
     sleep 1
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --ez "open_drawer" "true"
-    screenshot "raw/$language/02.png"
+    screenshot "$folder/$language/02.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "EpisodesFragment"
-    screenshot "raw/$language/03a.png"
+    screenshot "$folder/$language/03a.png"
 
     resetDatabase 1
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "EpisodesFragment"
-    screenshot "raw/$language/03b.png"
+    screenshot "$folder/$language/03b.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "QueueFragment"
-    screenshot "raw/$language/04.png"
+    screenshot "$folder/$language/04.png"
+
+    resetDatabase 0
+    adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "AddFeedFragment"
+    screenshot "$folder/$language/05.png"
 }
 
 createScreenshots "en-US"
