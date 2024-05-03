@@ -85,6 +85,10 @@ def generate_screenshots(language, font):
     simple_phone(texts["03.png"], 'background2.png', raw_screenshots_path + '/02.png', output_path + '/phone-screenshots/03.png', font)
     simple_phone(texts["04.png"], 'background1.png', raw_screenshots_path + '/04.png', output_path + '/phone-screenshots/04.png', font)
     simple_phone(texts["05.png"], 'background2.png', raw_screenshots_path + '/05.png', output_path + '/phone-screenshots/05.png', font)
+    
+    if not Path(raw_screenshots_path + '/tablet.png').is_file():
+        raw_screenshots_path = 'raw/en-US'
+
     simple_tablet(texts["tablet.png"], raw_screenshots_path + '/tablet.png', output_path + '/large-tablet-screenshots/tablet.png', font)
     os.system('mogrify -resize 1120 "' + output_path + '/phone-screenshots/0*.png"')
     os.system('mogrify -resize 1120 "' + output_path + '/large-tablet-screenshots/tablet.png"')
