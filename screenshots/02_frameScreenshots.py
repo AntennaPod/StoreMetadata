@@ -91,7 +91,6 @@ def generate_screenshots(language, font):
 
     simple_tablet(texts["tablet.png"], raw_screenshots_path + '/tablet.png', output_path + '/large-tablet-screenshots/tablet.png', font)
     os.system('mogrify -resize 1120 "' + output_path + '/phone-screenshots/0*.png"')
-    os.system('mogrify -resize 1120 "' + output_path + '/large-tablet-screenshots/tablet.png"')
 
 
 def check_os():
