@@ -1,9 +1,9 @@
-This new release is all about efficiency 🚀
-∙ Up to 3x faster refresh of subscriptions with 1000+ episodes
-∙ Up to 10x faster subscription deletion
-∙ Completes our 3-year effort to modernize AntennaPod's code structure
-∙ Allow to add sleep timer button to notification (@mueller-ma)
-∙ Option to automatically backup the database (@ByteHamster)
-∙ Skip silence setting per subscription (@quails4Eva)
-∙ Home screen: Reorder sections (@jojoman2)
+∙ Add episodes without subscribing to a podcast (@ByteHamster)
+∙ Pull-to-refresh on Downloads screen (@VishnuSanal)
+∙ Switch app language (@andre-m-dev)
+∙ Display subscriptions as a simple list (@ByteHamster)
+∙ Improved feed refresh speed (@0x082c8bf1)
+∙ Display Podcasting 2.0 transcript text (@tonytamsf)
+∙ Announce episode download start/end with Talkback (@teleoflexuous)
+∙ Support for parsing Nero M4A chapters (@IsAvaible)
 ∙ Various bug-fixes to improve stability and usability
