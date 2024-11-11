@@ -20,7 +20,7 @@ langs_and_fonts = {
 def generate_text(text, font):
     print("  " + text.replace("\n", "\\n"))
     os.system(
-        "convert -size 1698x750 xc:none -gravity Center -pointsize 130 -fill '#167df0' -font "
+        "magick -size 1698x750 xc:none -gravity Center -pointsize 130 -fill '#167df0' -font "
         + font
         + ' -annotate 0 "'
         + text
@@ -30,26 +30,27 @@ def generate_text(text, font):
 def generate_tablet_text(text, font):
     print("  " + text.replace("\n", "\\n"))
     os.system(
-        "convert -size 1730x350 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
+        "magick -size 1730x350 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
         + font
         + ' -annotate 0 "'
         + text
         + '" /tmp/text.png')
 
 
-def simple_phone(text, background_file, screenshotFile, outputFile, font):
+def simple_phone(text, background_file, screenshot_file, output_file, font):
     generate_text(text, font)
-    os.system('convert templates/' + background_file
+    os.system('magick templates/' + background_file
               + ' templates/phone.png -geometry +0+0 -composite '
-              + screenshotFile + ' -geometry +306+992 -composite '
+              + screenshot_file + ' -geometry +306+992 -composite '
               + '/tmp/text.png -geometry +0+0 -composite '
-              + outputFile)
+              + output_file)
+    os.system('mogrify -resize 1120 "' + output_file + '"')
 
 
 def simple_tablet(text, screenshot_file, output_file, font):
     generate_tablet_text(text, font)
-    os.system('convert ' + screenshot_file + ' -resize 1285 "/tmp/resized-image.png"')
-    os.system('convert templates/tablet.png '
+    os.system('magick ' + screenshot_file + ' -resize 1285 "/tmp/resized-image.png"')
+    os.system('magick templates/tablet.png '
               + '/tmp/resized-image.png -geometry +224+459 -composite '
               + '/tmp/text.png -geometry +0+0 -composite '
               + output_file)
@@ -57,14 +58,22 @@ def simple_tablet(text, screenshot_file, output_file, font):
 
 def two_phones(text, raw_screenshots_path, output_file, font):
     generate_text(text, font)
-    os.system('convert templates/background2.png '
+    os.system('magick templates/background2.png '
               + 'templates/twophones-a.png -geometry +0+10 -composite '
               + raw_screenshots_path + '/03a.png -geometry +119+992 -composite '
               + 'templates/twophones-b.png -geometry +0+0 -composite '
               + raw_screenshots_path + '/03b.png -geometry +479+1540 -composite '
               + '/tmp/text.png -geometry +0+0 -composite '
               + output_file)
+    os.system('mogrify -resize 1120 "' + output_file + '"')
 
+def overwrite_if_different(new, original):
+    proc = subprocess.Popen(["magick", "compare", "-metric", "PSNR", new, original, "/tmp/difference.png"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    output = proc.stderr.read().decode(encoding='utf-8')
+    if output.find("(0)") != -1:
+        os.remove(new)
+    else:
+        os.replace(new, original)
 
 def generate_screenshots(language, font):
     print(language)
@@ -79,19 +88,29 @@ def generate_screenshots(language, font):
     if not Path(raw_screenshots_path + '/00.png').is_file():
         raw_screenshots_path = 'raw/en-US'
 
-    simple_phone(texts["00.png"], 'background1.png', raw_screenshots_path + '/00.png', output_path + '/phone-screenshots/00.png', font)
-    two_phones(texts["01.png"], raw_screenshots_path, output_path + '/phone-screenshots/01.png', font)
-    simple_phone(texts["02.png"], 'background1.png', raw_screenshots_path + '/01.png', output_path + '/phone-screenshots/02.png', font)
-    simple_phone(texts["03.png"], 'background2.png', raw_screenshots_path + '/02.png', output_path + '/phone-screenshots/03.png', font)
-    simple_phone(texts["04.png"], 'background1.png', raw_screenshots_path + '/04.png', output_path + '/phone-screenshots/04.png', font)
-    simple_phone(texts["05.png"], 'background2.png', raw_screenshots_path + '/05.png', output_path + '/phone-screenshots/05.png', font)
-    
+    simple_phone(texts["00.png"], 'background1.png', raw_screenshots_path + '/00.png', output_path + '/phone-screenshots/00.new.png', font)
+    overwrite_if_different(output_path + '/phone-screenshots/00.new.png', output_path + '/phone-screenshots/00.png')
+
+    two_phones(texts["01.png"], raw_screenshots_path, output_path + '/phone-screenshots/01.new.png', font)
+    overwrite_if_different(output_path + '/phone-screenshots/01.new.png', output_path + '/phone-screenshots/01.png')
+
+    simple_phone(texts["02.png"], 'background1.png', raw_screenshots_path + '/01.png', output_path + '/phone-screenshots/02.new.png', font)
+    overwrite_if_different(output_path + '/phone-screenshots/02.new.png', output_path + '/phone-screenshots/02.png')
+
+    simple_phone(texts["03.png"], 'background2.png', raw_screenshots_path + '/02.png', output_path + '/phone-screenshots/03.new.png', font)
+    overwrite_if_different(output_path + '/phone-screenshots/03.new.png', output_path + '/phone-screenshots/03.png')
+
+    simple_phone(texts["04.png"], 'background1.png', raw_screenshots_path + '/04.png', output_path + '/phone-screenshots/04.new.png', font)
+    overwrite_if_different(output_path + '/phone-screenshots/04.new.png', output_path + '/phone-screenshots/04.png')
+
+    simple_phone(texts["05.png"], 'background2.png', raw_screenshots_path + '/05.png', output_path + '/phone-screenshots/05.new.png', font)
+    overwrite_if_different(output_path + '/phone-screenshots/05.new.png', output_path + '/phone-screenshots/05.png')
+
     if not Path(raw_screenshots_path + '/tablet.png').is_file():
         raw_screenshots_path = 'raw/en-US'
 
-    simple_tablet(texts["tablet.png"], raw_screenshots_path + '/tablet.png', output_path + '/large-tablet-screenshots/tablet.png', font)
-    os.system('mogrify -resize 1120 "' + output_path + '/phone-screenshots/0*.png"')
-
+    simple_tablet(texts["tablet.png"], raw_screenshots_path + '/tablet.png', output_path + '/large-tablet-screenshots/tablet.new.png', font)
+    overwrite_if_different(output_path + '/large-tablet-screenshots/tablet.new.png', output_path + '/large-tablet-screenshots/tablet.png')
 
 def check_os():
     """Currently only working on Linux."""
@@ -99,10 +118,10 @@ def check_os():
 
 
 def check_packages():
-    """ImageMagicks convert and morgify are required."""
+    """ImageMagick and morgify are required."""
     common = b'Version: ImageMagick'
     try:
-        return common in subprocess.check_output(['convert', '-version']) and common in subprocess.check_output(
+        return common in subprocess.check_output(['magick', '-version']) and common in subprocess.check_output(
             ['mogrify', '-version'])
     except subprocess.CalledProcessError:
         return False
