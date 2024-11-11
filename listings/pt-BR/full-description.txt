@@ -12,7 +12,7 @@ Feito por entusiastas de podcast, o AntennaPod é gratuito em todos os sentidos 
 
 Acompanhe, compartilhe e aprecie
 &#8226; Guarde o melhor do melhor marcando episódios como favoritos<br>
-&#8226; Encontre aquele episódio específico  através do histórico de execução ou pelo sistema de busca (através de títulos e anotações)<br>
+&#8226; Encontre aquele episódio específico por meio do histórico de reprodução ou buscando por títulos e sinopses<br>
 &#8226; Compartilhe episódios e <i>feeds</i> através de opções em redes sociais, email, os serviços da gPodder.net e exportação OPML<br>
 
 Controle o sistema

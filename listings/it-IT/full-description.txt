@@ -1,14 +1,14 @@
-AntennaPod è un lettore e gestore di podcast che ti permette di accedere immediatamente a milioni di podcast gratuiti e a pagamento, dai podcaster indipendenti alle grandi emittenti come BBC, NPR e CNN. Aggiungi, importa ed esporta i feed in modo semplice tramite il database di Apple Podcast, i file OPML o i semplici indirizzi RSS.
+AntennaPod è un lettore e gestore di podcast che ti permette di accedere immediatamente a milioni di podcast gratuiti e a pagamento, dai podcaster indipendenti alle grandi emittenti come BBC, NPR e CNN. Aggiungi, importa ed esporta i feed in modo semplice tramite il database di Apple Podcasts, i file OPML o i semplici indirizzi RSS.
 Scarica, ascolta in streaming o metti in coda gli episodi e goditeli come preferisci grazie alla velocità di riproduzione modificabile, al supporto ai capitoli e al timer di spegnimento.
 Risparmia fatica, carica della batteria e dati grazie ai potenti controlli automatizzati per il download degli episodi (specificando orari, intervalli di tempo e reti Wi-Fi) e l'eliminazione degli episodi (in base alle tue impostazioni su preferiti e tempi di cancellazione).
 
 Creato da appassionati di podcast, AntennaPod è libero in tutti i sensi: open source, gratuito e senza pubblicità.
 
 <b>Importa, organizza e riproduci</b>
-• Gestisci la riproduzione ovunque: widget nella schermata home, tendina delle notifiche, cuffie e controlli Bluetooth.
-• Aggiungi e importa feed tramite le directory Apple Podcast, gPodder, fyyd o Podcast Index, file OPML, e collegamenti RSS o Atom.
+• Gestisci la riproduzione ovunque: widget nella schermata home, notifiche di sistema, e controlli degli auricolari e del Bluetooth.
+• Aggiungi e importa feed tramite le directory Apple Podcasts, gPodder.net, fyyd o Podcast Index, file OPML, e collegamenti RSS o Atom.
 • Goditi l'ascolto nel modo che preferisci grazie alla velocità di riproduzione modificabile, al supporto ai capitoli, alla memorizzazione dello stato di riproduzione e al timer di spegnimento avanzato (scuoti per riavviare o riduci il volume)
-• Accedi tramite utente e password ai feed e agli episodi riservati
+• Accedi ai feed e agli episodi protetti da password
 
 <b>Tieni traccia, condividi & ricerca</b>
 • Tieni traccia dei migliori episodi di sempre segnandoli come preferiti
@@ -21,7 +21,7 @@ Creato da appassionati di podcast, AntennaPod è libero in tutti i sensi: open s
 • Adatta l'interfaccia alle tue preferenze grazie ai temi chiaro o scuro
 • Effettua il backup delle iscrizioni grazie all'integrazione con gPodder.net e all'esportazione in formato OPML
 
-<b>Partecipa alla community di AntennaPod!</b>
+<b>Partecipa alla comunità di AntennaPod!</b>
 AntennaPod è sviluppato da volontari. Anche tu puoi contribuire, con il codice o con dei commenti!
 
 I simpatici membri del nostro forum sono felici di rispondere a qualsiasi domanda tu possa avere. Ti invitiamo anche a discutere di funzionalità e di podcasting in generale.

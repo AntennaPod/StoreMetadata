@@ -1,1 +1,0 @@
-Reproductor i organitzador de pòdcasts, fàcil d'usar, flexible i de codi obert.
