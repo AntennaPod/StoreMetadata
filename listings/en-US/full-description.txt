@@ -27,5 +27,5 @@ AntennaPod is under active development by volunteers. You can contribute too, wi
 Our friendly forum members are happy to help with every question you have. You are invited to discuss features and podcasting in general, too.
 https://forum.antennapod.org/
 
-Transifex is the place to help with translations:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod is translated on Weblate by volunteers like you:
+https://hosted.weblate.org/projects/antennapod/app/
