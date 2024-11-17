@@ -1,9 +1,1 @@
-∙ Add episodes without subscribing to a podcast (@ByteHamster)
-∙ Pull-to-refresh on Downloads screen (@VishnuSanal)
-∙ Switch app language (@andre-m-dev)
-∙ Display subscriptions as a simple list (@ByteHamster)
-∙ Improved feed refresh speed (@0x082c8bf1)
-∙ Display Podcasting 2.0 transcript text (@tonytamsf)
-∙ Announce episode download start/end with Talkback (@teleoflexuous)
-∙ Support for parsing Nero M4A chapters (@IsAvaible)
-∙ Various bug-fixes to improve stability and usability
+This is a beta release
