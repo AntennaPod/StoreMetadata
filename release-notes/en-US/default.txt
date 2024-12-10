@@ -1,1 +1,7 @@
-This is a beta release
+∙ Optionally enable bottom navigation (@ByteHamster)
+∙ Add possibility to rearrange side- and bottom menu items (@ByteHamster)
+∙ Make Home screen with empty sections more user friendly (@flofriday)
+∙ Quickly delete all played episodes from Downloads screen (@tonytamsf)
+∙ Allow sharing a podcast via long-press on Subscriptions screen (@ByteHamster)
+∙ Remember user choice when attempting downloads via mobile data (@tonytamsf)
+∙ Various other bug-fixes & improvements
