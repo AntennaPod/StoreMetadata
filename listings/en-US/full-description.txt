@@ -28,4 +28,4 @@ Our friendly forum members are happy to help with every question you have. You a
 https://forum.antennapod.org/
 
 AntennaPod is translated on Weblate by volunteers like you:
-https://hosted.weblate.org/projects/antennapod/app/
+https://hosted.weblate.org/engage/antennapod
