@@ -1,1 +1,7 @@
-This is a beta release
+∙ Convert autodownloads from master switch to per-podcast setting (@newhinton)
+∙ Add option to automatically download queue (@ByteHamster)
+∙ Add option to have play/pause button on Downloads screen (@RihardsT)
+∙ Allow to delete tags by long-pressing (@anotherHoffmann)
+∙ Support closing miniplayer by swiping down (@ByteHamster)
+∙ Bottom navigation improvements (@ByteHamster)
+∙ Various bug fixes & improvements, including on casting, error messages and support for RTL languages (@ByteHamster, @ebraminio)
