@@ -1,4 +1,8 @@
-∙ Fixed issues with Auto-Download (@ByteHamster)
-∙ Tweaked default queue sorting (@dominikfill)
-∙ Fixed issues with sleep timer (@eblis)
-∙ Enable bottom navigation by default for new users (@ByteHamster)
+∙ Add vtt support for transcripts (@Shaac)
+∙ Add predictive back gestures (@ByteHamster)
+∙ Faster search by removing fyyd from default providers (@ByteHamster)
+∙ Enable copying podcast title and host (@GiannisMakris)
+∙ Add "move to top/bottom" multi-select action in queue (@dominikfill)
+∙ Add button to inbox from empty queue screen (@tmatale)
+∙ Remember scroll positions (@ByteHamster, @schasi)
+∙ Various bug fixes & improvements
