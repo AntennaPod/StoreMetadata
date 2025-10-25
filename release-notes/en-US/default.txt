@@ -1,8 +1,8 @@
-∙ Add vtt support for transcripts (@Shaac)
-∙ Add predictive back gestures (@ByteHamster)
-∙ Faster search by removing fyyd from default providers (@ByteHamster)
-∙ Enable copying podcast title and host (@GiannisMakris)
-∙ Add "move to top/bottom" multi-select action in queue (@dominikfill)
-∙ Add button to inbox from empty queue screen (@tmatale)
-∙ Remember scroll positions (@ByteHamster, @schasi)
-∙ Various bug fixes & improvements
+∙ Add subscriptions archive (@ByteHamster)
+∙ Display tags above subscriptions screen (@ByteHamster)
+∙ Allow copying transcripts (@Mino260806)
+∙ Highlight plain-text links in episode descriptions (@viariable)
+∙ Move (global) subscriptions settings to subscriptions screen (@ByteHamster)
+∙ Handle release stats for multi-per-day podcasts (@tmatale)
+∙ Support cancelling downloads using multi-select (@ByteHamster)
+∙ Plus the usual assortment of bug fixes & improvements!
