@@ -1,25 +1,25 @@
-AntennaPod is a podcast manager and player that gives you instant access to millions of free and paid podcasts, from independent podcasters to large publishing houses such as the BBC, NPR and CNN. Add, import and export their feeds hassle-free using the Apple Podcasts database, OPML files or simple RSS URLs.
-將各 Podcast 劇集下載、串流播放或放入隊列，然後可以調整播放速度、跳躍章節、設定睡眠時間等等，用您喜愛的方式聆聽享受。
-用強大的自動下載設定指定時間、頻率、WiFi 下載，並且可以依據最愛劇集與延遲設定等方式刪除已經聽過的劇集。省力、省電、省數據。
+AntennaPod 是一款 Podcast 管理器與播放器，讓您能即時收聽數百萬個免費及付費的 Podcast，來源涵蓋獨立 Podcaster 及 BBC、NPR、CNN 等大型出版商。透過 Apple Podcast 資料庫、OPML 檔案或簡單的 RSS 網址，輕鬆新增、匯入及匯出他們的節目來源。
+您可以下載、串流播放或將單集加入待播清單，並透過可調整的播放速度、章節支援及睡眠計時器，以您喜歡的方式享受這些內容。
+透過強大的自動化控制功能，節省精力、電量及行動數據使用量，這些功能包括：自動下載單集 (可指定時間、間隔及 Wi-Fi 網路) 及自動刪除單集 (根據您的收藏及延遲設定)。
 
 AntennaPod 由 Podcast 愛好者鼎力製作，免費、無廣告、開放原始碼，給您最全面的自由。
 
 <b>匯入、管理、播放</b>
-• 從主畫面小工具、系統通知、耳機或藍牙控制器隨處播放
-• Add and import feeds via the Apple Podcasts, gPodder.net, fyyd or Podcast Index directories, OPML files and RSS or Atom links
-• 擁有自訂播放速度、支援章節、記憶播放進度、設定睡眠時間等功能，享受自由聆聽的樂趣
-• 支援以密碼保護的 Podcast
+• 隨處管理播放：從主畫面小工具、系統通知、耳機或藍牙控制器隨處播放
+• 透過 Apple Podcasts、gPodder.net、fyyd 或 Podcast Index 目錄、OPML 檔案以及 RSS 或 Atom 連結來新增和匯入訂閱來源
+• 擁有自訂播放速度、支援章節、記憶播放進度、進階睡眠計時器（搖動重設、降低音量），享受自由聆聽的樂趣
+• 支援收聽受密碼保護的 Podcast
 
-<b>保留、分享</b>
-• 將特定一集設定為最愛，永久留存
-• 自播放紀錄、標題或附註等處搜尋特定一集
-• 以社群網站、電子郵件、gPodder.net 或匯出 OPML 等方式分享 Podcast
+<b>追蹤、分享與支持</b>
+• 將單集標記為我的最愛，輕鬆追蹤最精彩的內容
+• 透過播放紀錄、標題或附註等處，找到特定單集
+• 透過進階社群媒體和電子郵件選項、gPodder.net 服務以及 OPML 匯出功能，分享 Podcast
 
 <b>一手掌控</b>
-• 選擇特定 Podcast、只用特定 WiFi 下載、僅在充電時下載、設定更新頻率與次數等等機制，完整控制自動下載功能
+• 完整控制自動下載功能：選擇特定 Podcast、排除行動網路、只用特定 Wi-Fi 下載、僅在充電時下載、設定更新頻率與次數
 • 設定暫存集數上限、智慧刪除、設定儲存位置等機制，方便管理設備空間
-• 根據系統環境採用明亮或暗夜佈景
-• 以整合的 gPodder.net 服務或匯出 OPML 來備份訂閱清單
+• 選擇採用淺色或深色主題來適應您的環境
+• 透過 gPodder.net 整合服務或匯出 OPML 來備份您的訂閱清單
 
 <b>加入 AntennaPod 社群！</b>
 AntennaPod 由志工熱情製作，您也可以加入 -- 幫忙寫程式或給意見都非常歡迎！
@@ -27,5 +27,5 @@ AntennaPod 由志工熱情製作，您也可以加入 -- 幫忙寫程式或給�
 若您遇上使用問題，論壇上的社群成員都樂意提供協助。您也可以加入討論未來功能、其他 Podcast 相關的事情。
 https://forum.antennapod.org/
 
-協助翻譯請至 Transifex：
-https://www.transifex.com/antennapod/antennapod
+AntennaPod 是經由在 Weblate 上的志願者完成翻譯，加入我們:
+https://hosted.weblate.org/engage/antennapod

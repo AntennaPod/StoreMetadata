@@ -1,1 +1,1 @@
-Un lecteur de podcast  facile et souple à utiliser
+Un lecteur de podcast open-source facile à utiliser et flexible

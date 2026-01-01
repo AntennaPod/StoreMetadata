@@ -16,7 +16,7 @@ AntennaPod is gemaakt door podcast-enthousiastelingen. Het team van vrijwilliger
 • Deel podcasts en afleveringen via uitgebreide opties voor sociale media, email, gPodder.net of een OPML-bestand
 
 <b>Hou de controle</b>
-• Beheer automatische downloads: kies je podcasts, sluit mobiele netwerken uit, selecteer specifieke WiFi-verbindingen, vereis dat de telefoon wordt opgeladen en bepaal tijden of intervals
+• Beheer automatische downloads: kies je podcasts, sluit mobiele netwerken uit, selecteer specifieke Wi-Fi-verbindingen, vereis dat de telefoon wordt opgeladen en bepaal tijden of intervals
 • Controleer geheugengebruik: stel een maximumaantal gedownloade afleveringen in, laat afleveringen automatisch verwijderen en selecteer zelf je opslaglocatie
 • Voel je een kameleon: kies voor een licht of donker uiterlijk
 • Back-up je abonnementen via gPodder.net en geëxporteerde OPML-bestanden
@@ -27,5 +27,5 @@ AntennaPod wordt regelmatig geüpdatet door vrijwilligers. En jij kan ook helpen
 De vriendelijke leden van ons forum helpen je graag met welke vraag dan ook. Deel gerust ook ideëen voor nieuwe functies of podcasts in het algemeen.
 https://forum.antennapod.org/
 
-Transifex is de beste plek om te helpen met vertalen:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod wordt op Weblate vertaald door vrijwilligers zoals jij::
+https://hosted.weblate.org/engage/antennapod

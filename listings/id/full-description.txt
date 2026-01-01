@@ -1,6 +1,6 @@
 AntennaPod is a podcast manager and player that gives you instant access to millions of free and paid podcasts, from independent podcasters to large publishing houses such as the BBC, NPR and CNN. Add, import and export their feeds hassle-free using the Apple Podcasts database, OPML files or simple RSS URLs.
 Unduh, stream, atau antri episode dan nikmati sesuai keinginan Anda dengan kecepatan pemutaran kembali yang dapat diatur, dukungan bab, dan pengatur waktu tidur.
-Hemati usaha, daya baterai dan data seluler dengan kontrol otomatisasi yang canggih untuk mengunduh episode (tentukan waktu, selangan waktu, dan jaringan WiFi tertentu) dan menghapus episode (berdasarkan daftar favorit Anda dan setelan penundaan).
+Hemati usaha, daya baterai dan data seluler dengan kontrol otomatisasi yang canggih untuk mengunduh episode (tentukan waktu, selangan waktu, dan jaringan Wi-Fi tertentu) dan menghapus episode (berdasarkan daftar favorit Anda dan setelan penundaan).
 
 Dibuat oleh para penggemar podcast, AntennaPod gratis dalam segala makna yang dimaksud: sumber yang terbuka, tanpa biaya, dan tanpa iklan.
 
@@ -16,7 +16,7 @@ Dibuat oleh para penggemar podcast, AntennaPod gratis dalam segala makna yang di
 • Bagikan episode dan umpan melalui opsi sosial media dan email yang canggih, layanan-layanan gPodder.net, serta melalui ekspor OPML
 
 <b>Mengontrol sistem</b>
-• Kendalikan pengunduhan otomatis: pilih umpan, kecualikan jaringan seluler, pilih jaringan WiFi yang spesifik, haruskan ponsel untuk dicas, dan atur waktu atau selangan waktu tertentu
+• Kendalikan pengunduhan otomatis: pilih umpan, kecualikan jaringan seluler, pilih jaringan Wi-Fi yang spesifik, haruskan ponsel untuk dicas, dan atur waktu atau selangan waktu tertentu
 • Kelola penyimpanan dengan mengatur banyaknya episode yang tercached, penghapusan pintar, dan pemilihan lokasi Anda yang diinginkan
 • Beradaptasi dengan lingkungan Anda menggunakan tema terang dan gelap
 • Cadangkan langganan Anda dengan integrasi gPodder.net dan ekspor OPML
@@ -27,5 +27,5 @@ AntennaPod sedang dalam pengembangan aktif oleh para sukarelawan. Anda dapat ber
 Anggota forum kami akan dengan senang menjawab pertanyaan apa pun yang Anda miliki. Anda juga diundang untuk mendiskusikan fitur-fitur serta podcasting secara umum.
 https://forum.antennapod.org/
 
-Transifex adalah tempat untuk membantu terjemahan:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod diterjemahkan di Weblate oleh sukarelawan seperti Anda:
+https://hosted.weblate.org/engage/antennapod

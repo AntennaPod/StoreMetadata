@@ -1,6 +1,6 @@
 AntennaPod is a podcast manager and player that gives you instant access to millions of free and paid podcasts, from independent podcasters to large publishing houses such as the BBC, NPR and CNN. Add, import and export their feeds hassle-free using the Apple Podcasts database, OPML files or simple RSS URLs.
 Laadi alla, voogedasta või lisa kuulamise järjekorda saateid ning naudi neid täpselt nii, nagu sina tahad, kasutades muudetavat taasesituse kiirust, peatükkide tuge ja unetaimerit.
-Säästa pingutuselt, aku kestuselt ja mobiilse andmeside kasutuselt võimekate automatiseerimise vahenditega saadete allalaadimiseks (määra millal, mis sagedusega ja millistes WiFi võrkudes) ning kustutamiseks (vastavalt sinu lemmikutele ja viivituse sätetele).
+Säästa pingutuselt, aku kestuselt ja mobiilse andmeside kasutuselt võimekate automatiseerimise vahenditega saadete allalaadimiseks (määra millal, mis sagedusega ja millistes Wi-Fi võrkudes) ning kustutamiseks (vastavalt sinu lemmikutele ja viivituse sätetele).
 
 Kuna AntennaPod on tehtud taskuhäälingu entusiastide poolt, on AntennaPod vaba selle sõna igas tähenduses: vaba lähtekoodiga, tasuta ja ilma mingi reklaamita.
 
@@ -16,7 +16,7 @@ Kuna AntennaPod on tehtud taskuhäälingu entusiastide poolt, on AntennaPod vaba
 • Jaga saateid ja voogusid suurepäraste sotsiaalmeedia ja e-posti valikute abil, gPodder.neti kaudu ja OPML failide abil
 
 <b>Oma kontrolli</b>
-• Võta kontroll automaatse allalaadimise üle enda kätte: vali vood, keela mobiilivõrk, vali õiged WiFi võrgud, ütle, kui telefon peaks allalaadimise ajal laadima või määra millal ja kui tihti saateid alla laadida
+• Võta kontroll automaatse allalaadimise üle enda kätte: vali vood, keela mobiilivõrk, vali õiged Wi-Fi võrgud, ütle, kui telefon peaks allalaadimise ajal laadima või määra millal ja kui tihti saateid alla laadida
 • Halda ruumikasutust, määrates mitu saadet varuks hoida, luba nutikas kustutamine ja failide eelistatud asukoha määramine
 • Kohanda keskonnaga heleda ja tumeda kujundusega
 • Varunda oma tellimused gPodder.net keskkonda ja OPML faili eksportides
@@ -27,5 +27,5 @@ AntennaPod on vabatahtlike poolt aktiivselt arendamisel. Ka sina võid anda oma 
 Meie sõbralikud foorumi liikmed aitavad sind meeleldi leida vastuse kõigile küsimustele. Oled oodatud arutama nii äpi võimalusi kui taskuhäälinguid üldiselt.
 https://forum.antennapod.org/
 
-Transifex on koht, kus saab aidata tõlgetega:
-https://www.transifex.com/antennapod/antennapod
+AntennaPodi tõlgivad Weblate abil sinusugused vabatahtlikud:
+https://hosted.weblate.org/engage/antennapod

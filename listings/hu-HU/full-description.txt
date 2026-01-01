@@ -1,8 +1,8 @@
 Az AntennaPod egy podcastkezelő és -lejátszó, amely azonnali hozzáférést nyújt ingyenes és fizetős podcastok millióihoz: a független podcastkészítőktől kezdve a nagy kiadókig, mint a BBC, NPR és a CNN. Adjon hozzá, importáljon és exportáljon csatornákat az Apple Podcasts adatbázis, OPML fájlok vagy egyszerű RSS webcímek segítségével.
 Töltsön le, hallgassa élőben vagy állítsa sorba az epizódokat, és elvezze azokat, ahogy szeretné az állítható lejátszási sebességgel, a fejezettámogatással és az alvási időzítővel.
-Spóroljon az idejével, az akkumulátorral és a mobiladat-keretével a sokoldalú automatizálási beállításokkal, melyek letöltik az epizódokat (adjon meg időket, intervallumokat és WiFi-hálózatokat), és törlik is azokat (a kedvencei vagy a késleltetési beállításai alapján).
+Spóroljon az idejével, az akkumulátorral és a mobiladat-keretével a sokoldalú automatizálási beállításokkal, melyek letöltik az epizódokat (adjon meg időket, intervallumokat és Wi-Fi-hálózatokat), és törlik is azokat (a kedvencei vagy a késleltetési beállításai alapján).
 
-Podcast-rajongók készítésében, az AntennaPod teljesen szabad, nyílt forráskódú, ingyenes, és hirdetésektől mentes.
+A podcastrajongók által készített AntennaPod teljesen szabad, nyílt forráskódú, ingyenes, és hirdetésektől mentes.
 
 <b>Importálás, rendszerezés és lejátszás</b>
 • Lejátszás kezelése bárhonnan: a kezdőképernyőről, fülhallgatóról és bluetoothos vezérlőkről
@@ -16,7 +16,7 @@ Podcast-rajongók készítésében, az AntennaPod teljesen szabad, nyílt forrá
 • Osszon meg epizódokat és csatornákat továbbfejlesztett közösségi média és e-mail lehetőségekkel, a gPodder.net szolgáltatásokkal és OPML exportálás segítségével
 
 <b>Vezérelje a rendszert</b>
-• Vegye át az irányítást az automatikus letöltés felett: válasszon csatornákat, mellőzze a mobilhálózatokat, válasszon specifikus WiFi-hálózatokat, követelje meg a telefon töltését és adjon meg időpontokat vagy időszakokat
+• Vegye át az irányítást az automatikus letöltés felett: válasszon csatornákat, mellőzze a mobilhálózatokat, válasszon specifikus Wi-Fi-hálózatokat, követelje meg a telefon töltését és adjon meg időpontokat vagy időszakokat
 • Kezelje a tárhelyet a tárolandó epizódok számának megadásával, az okos törléssel és az előnyben részesített hely megadásával
 • Alkalmazkodjon a környezethez a világos és sötét téma használatával
 • Mentse el a feliratkozásait a gPodder.net integrációval és az OPML exporttal
@@ -27,5 +27,5 @@ Az AntennaPodot aktívan fejlesztik az önkéntesek. Ön is közreműködhet: k�
 A barátságos fórumtagjaink örömmel segítenek minden felmerülő kérdésben. Meghívjuk, hogy beszélgessen a funkciókról, valamint általánosságban a podcastolásról.
 https://forum.antennapod.org/
 
-A Transifexen segíthet a fordításokban:
-https://www.transifex.com/antennapod/antennapod
+Az AntennaPodot Önhöz hasonló önkéntesek fordítják a Weblate-en:
+https://hosted.weblate.org/engage/antennapod

@@ -1,23 +1,23 @@
-AntennaPod er en podkastbehandler og -spiller som gir deg umiddelbar tilgang til millioner av gratis og betalte podkaster, fra selvstendige podkaster til store publisering forlag som for eksempel: BBC, NPR and CNN. Legg til, importer og eksporter deres strømmer helt enkelt ved å benytte iTunes podkastdatabasen, OPML-filer eller enkle RSS nettadresser.
-Last ned, strøm eller sett episoder i kø og kos deg med dem senere med forskjellige avspillingshastigheter, støtte for kapitler og søvnnedtelling.
-Spar tid, batteri og databruk med automatisert nedlasting av episoder (spesifiser tider, intervaller og trådløse nettverk) og sletting av episoder (basert på dine favoritter og utsettelsesinstillinger).
+AntennaPod er en podkastbehandler og -spiller som gir deg umiddelbar tilgang til millioner av gratis og betalte podkaster, fra selvstendige podkaster til store publiseringsforlag som for eksempel: BBC, NPR og CNN. Legg til, importer og eksporter deres strømmer problemfritt ved å benytte Apple Podcasts-databasen, OPML-filer eller enkle RSS-nettadresser.
+Last ned, strøm eller sett episoder i kø og nyt dem med justerbar avspillingshastighet, støtte for kapitler og søvnnedtelling.
+Spar tid, batteri og mobildata med automatisert nedlasting av episoder (spesifiser tider, intervaller og trådløse nettverk) og sletting av episoder (basert på dine favoritter og utsettelsesinnstillinger).
 
-Fordi AntennaPod er lagd av podkastentusiaster, er det gratis på alle måter: åpent kildekode, ingen kostnader, ingen reklamer.
+Laget av podkastentusiaster, AntennaPod er gratis på alle måter: åpen kildekode, ingen kostnader, ingen reklamer.
 
 <b>Importer, organiser og spill av</b>
-• Forvalte dine avspillinger fra over alt: widget på hjemmeskjerm, systemmeldinger og ørepropp og blåtann innstillinger.
-• Legg til og importer strømmer fra Apple Podcasts, gPodder.net, fyyd or Podkast indeksmapper, OPML-filer og linker fra RSS eller ATOM.
-• Nyt å lytte på din måte med regulerbar avspillingsfart, støtte for kapittel, husket avspillingsposisjon og en avansert søvnnedtelling (rist for å tilbakestille, lavere volum)
-• Tilgang til passordbeskyttede strømmer og episoder
+• Håndter avspillinger fra hvor som helst: widget på startskjermen, systemvarsler og kontroller for ørepropper og blåtann.
+• Legg til og importer strømmer fra Apple Podcasts, gPodder.net, fyyd eller Podkast indeksmapper, OPML-filer og lenker fra RSS eller ATOM.
+• Nyt å lytte på din måte med justerbar avspillingshastighet, støtte for kapitler, husket avspillingsposisjon og en avansert søvnnedtelling (rist for å tilbakestille, senk volumet)
+• Få tilgang til passordbeskyttede strømmer og episoder
 
-<b>Følg med, del & nyt</b>
-• Følg med på det beste av det beste ved å markere episoder som favoritter
-• Finn den ene episoden igjennom avspillingshistorikken eller ved å søke etter titler og shownotater.
-• Del episoder og strømmer gjennom avanserte valg for sosiale media og epost, gPodder.net-tjenesten og via OPML-eksport
+<b>Hold oversikt, del og verdsett</b>
+• Hold oversikt over det beste av det beste ved å markere episoder som favoritter
+• Finn akkurat den ene episoden gjennom avspillingshistorikken eller ved å søke i titler og episodenotater
+• Del episoder og strømmer gjennom avanserte valg for sosiale medier og e-post, gPodder.net-tjenestene og via OPML-eksport
 
 <b>Kontroller systemet</b>
-• Ta kontroll over autmatiserte nedlastinger: velg strømmer, eksluder mobile nettverk, velg spesifikke WiFi-nettverk, krev at telefonen lades og sett tider eller intervaller
-• Styr lagring ved å bestemme antall nedlastede episodes, smart sletting og velg ditt foretrukkede sted
+• Ta kontroll over automatiserte nedlastinger: velg strømmer, ekskluder mobile nettverk, velg spesifikke Wi-Fi-nettverk, krev at telefonen lades og sett opp tider eller intervaller
+• Styr lagringen ved å angi antall nedlastede episoder, benytt smart sletting og velg din foretrukne plassering
 • Tilpass til omgivelsene ved å bruke lyst eller mørkt tema
 • Ta sikkerhetskopi av abonnementene dine med gPodder.net-integrasjon eller OPML-eksport
 
@@ -27,5 +27,5 @@ AntennaPod er under aktiv utvikling av frivillige. Du kan også bidra, med kode 
 Medlemmene våre i forumet hjelper gjerne med å svare på alle spørsmål du har. Ta gjerne en titt innom for å snakke om nye funksjoner og podkasting generelt.
 https://forum.antennapod.org/
 
-Du kan hjelpe til å oversette ved å bruke Transifex:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod oversettes på Weblate av frivillige som deg:
+https://hosted.weblate.org/engage/antennapod

@@ -5,10 +5,10 @@ Aurreztu lana, bateria eta datu-kontsumoa deskargatzeko automatizazio-kontrol in
 Podcastaren jarraitzaile sutsuek sortua, AntennaPod askea da zentzu guztietan: kode irekia, doakoa eta publizitaterik gabekoa.
 
 <b>Inportatu, antolatu eta erreproduzitu</b>
-Erreprodukzioa edozein lekutatik administratzen du: kontrola hasierako pantailan, sistemaren jakinarazpena eta aurikular eta bluetooth kontrolak
-• Add and import feeds via the Apple Podcasts, gPodder.net, fyyd or Podcast Index directories, OPML files and RSS or Atom links
-& # 8226; Zure erara entzunez gozatu erreprodukzio-abiadura doigarriaz, kapituluen euskarria (MP3, VorbisComment eta Podlove), erreprodukzio-puntuaren eta loaldi aurreratuko tenporizadorearen oroigarria (astindu bolumena berrezartzeko, jaisteko eta erreprodukzio-abiadura murrizteko <br>
-• pasahitzarekin babestutako iturrietan eta saioetan sartu
+•Kudeatu erreprodukzioa edonondik: hasierako pantailako widget-a, sistemaren jakinarazpena eta belarrietarako tapoia eta bluetooth kontrolak
+• Gehitu eta inportatu jarioak Apple Podcasts, gPodder.net, fyyd edo Podcast Index direktorioen, OPML fitxategien eta RSS edo Atom esteken bidez
+• Gozatu zure modua entzuten erreprodukzio-abiadura erregulagarriarekin, kapituluen laguntzarekin, gogoratutako erreprodukzio-posizioarekin eta lo egiteko tenporizadore aurreratu batekin (astindu berrezartzeko, bolumena jaitsi)
+• Sarbidea pasahitz bidez babestutako jario eta ataletara
 
 <b>Jarraitu, baloratu eta partekatu</b>
 • egin onenetan onenen segimendua saioak gogokoetan sartuz
@@ -27,5 +27,5 @@ AntennaPod etengabe ari da garatzen boluntarioekin. Zuk ere ekarpena egin dezake
 Foroko kideak pozik daude galdera bakoitzarekin laguntzeagatik. Ezaugarriak eta podcastinga, oro har, eztabaidatzera gonbidatuta zaude.
 https://forum.antennapod.org/
 
-Transifex itzulpenekin laguntzeko lekua da:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod zu bezalako itzultzaile bolondresen eskutik itzulia izan da:
+https://hosted.weblate.org/engage/antennapod

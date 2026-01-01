@@ -1,8 +1,8 @@
-AntennaPod es un gestor y reproductor de pódcasts que te da acceso instantáneo a millones de podcast gratuitos y de pago; desde podcasters independientes a grandes estaciones como la BBC, NPR y CNN. Agrega, importa y exporta las fuentes de manera sencilla usando el directorio de Apple Podcasts, archivos OPML o las URL de tipo RSS.
-Descarga, escucha en stream o añade a la cola episodios y disfrútalos como quieras con velocidad de reproducción ajustable, soporte para capítulos y temporizador de sueño.
+AntennaPod es un gestor y reproductor de podcasts que te da acceso instantáneo a millones de podcast gratuitos y de pago; desde podcasters independientes a grandes estaciones como la BBC, NPR y CNN. Añade, importa y exporta las fuentes de manera sencilla usando el directorio de Apple Podcasts, archivos OPML o las URL de tipo RSS.
+Descarga, escucha a través de internet o añade a la cola episodios y disfrútalos como quieras con velocidad de reproducción ajustable, soporte para capítulos y temporizador de sueño.
 Ahorra esfuerzo, batería y consumo de datos con los potentes controles de automatización para descarga (especifica la hora y desde qué redes Wi-Fi) y el borrado de episodios antiguos (basado en tus preferencias).
 
-Creado por entusiastas del pódcast, AntennaPod es libre en todos los sentidos: código abierto, gratuito y sin publicidad.
+Creado por entusiastas de los podcasts, AntennaPod es libre en todos los sentidos: código abierto, gratuito y sin publicidad.
 
 <b>Importar, organizar y reproducir</b>
 • Administra la reproducción desde cualquier parte: control en la pantalla de inicio, las notificaciones del sistema y los controles de auriculares y bluetooth
@@ -22,10 +22,10 @@ Creado por entusiastas del pódcast, AntennaPod es libre en todos los sentidos: 
 • Haz una copia de seguridad de tus suscripciones con la integración de gPodder.net y exportando a OPML
 
 <b>¡Únete a la comunidad AntennaPod!</b>
-AntennaPod es desarrollado por voluntarios. ¡Tú también puedes contribuir, con tu código o con tus comentarios!
+AntennaPod está desarrollado por voluntarios. ¡Tú también puedes contribuir, con tu código o con comentarios!
 
 Nuestros amables miembros del foro te ayudarán con cualquier duda que tengas. Estás invitado a discutir sobre las características y el podcasting en general.
 https://forum.antennapod.org/
 
-Ayuda con las traducciones en Transifex:
-https://www.transifex.com/antennapod/antennapod
+Voluntarios como tú traducen AntennaPod en Weblate :
+https://hosted.weblate.org/engage/antennapod

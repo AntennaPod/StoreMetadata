@@ -1,1 +1,1 @@
-Gestor e reprodutor de podcasts simples, flexível e open souce
+Gestor e leitor de podcasts simples, flexível e de código aberto
