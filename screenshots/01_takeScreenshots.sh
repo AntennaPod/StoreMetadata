@@ -1,38 +1,50 @@
 #!/bin/bash
+set -e
 
-################### Create emulator ###################
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-echo no | $ANDROID_HOME/tools/bin/avdmanager create avd --force --name "AntennaPodScreenshots" --abi google_apis/x86_64 --package 'system-images;android-30;google_apis;x86_64'
-echo "
+cleanup() {
+    adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill && sleep 5; done
+    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+    $ANDROID_HOME/tools/bin/avdmanager delete avd -n "AntennaPodScreenshots" || true
+}
+trap cleanup INT TERM
+
+################### Setup ###################
+
+function setupEmulator() {
+    emulatorConfig=$1
+    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+    cleanup
+    echo no | $ANDROID_HOME/tools/bin/avdmanager create avd --force --name "AntennaPodScreenshots" --abi google_apis/x86_64 --package 'system-images;android-31;google_apis;x86_64'
+    echo "
 disk.dataPartition.size=6G
 hw.battery=yes
 hw.cpu.ncore=4
-hw.lcd.density=420
-hw.lcd.width=1080
-hw.lcd.height=1920
 hw.ramSize=1536
 showDeviceFrame=no
-" >> $HOME/.android/avd/AntennaPodScreenshots.avd/config.ini
-nohup $ANDROID_HOME/emulator/emulator -avd AntennaPodScreenshots -no-snapshot &
-while [ "$(adb shell getprop sys.boot_completed)" != "1" ]
-do
+$emulatorConfig
+    " >> $HOME/.android/avd/AntennaPodScreenshots.avd/config.ini
+    nohup $ANDROID_HOME/emulator/emulator -avd AntennaPodScreenshots -no-snapshot &
+    while [ "$(adb shell getprop sys.boot_completed)" != "1" ]
+    do
     echo "Waiting for emulator"
     sleep 3
-done
-sleep 10
+    done
+    sleep 10
+}
 
-################### Create screenshots ###################
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-adb root
+function install() {
+    export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+    adb root
 
-adb uninstall de.danoeh.antennapod.debug
-./gradlew :app:installPlayDebug
-adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity"
-sleep 1
-adb shell am force-stop de.danoeh.antennapod.debug
-version=$(adb shell dumpsys package de.danoeh.antennapod.debug | grep versionName | cut -d'=' -f2)
-versionMajor=0$(echo $version | cut -d'.' -f1)
-versionMinor=0$(echo $version | cut -d'.' -f2)
+    adb uninstall de.danoeh.antennapod.debug || true
+    ./gradlew :app:installPlayDebug
+    adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity"
+    sleep 1
+    adb shell am force-stop de.danoeh.antennapod.debug
+    version=$(adb shell dumpsys package de.danoeh.antennapod.debug | grep versionName | cut -d'=' -f2)
+    versionMajor=$(printf "%02d" $(echo $version | cut -d'.' -f1))
+    versionMinor=$(printf "%02d" $(echo $version | cut -d'.' -f2))
+}
 
 function resetDatabase() {
     theme=$1
@@ -41,13 +53,17 @@ function resetDatabase() {
     adb push app/src/play/play/screenshots/ScreenshotsDatabaseExport.db /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db
     adb shell chmod 777 /data/data/de.danoeh.antennapod.debug/databases
     adb shell chmod 777 /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db
-    echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?><map><boolean name='prefMainActivityIsFirstLaunch' value='false' /></map>" > tmp
+    echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?><map>
+        <boolean name='prefMainActivityIsFirstLaunch' value='false' />
+        <boolean name='screenshot_mode' value='true' />
+        </map>" > tmp
     adb push tmp /data/data/de.danoeh.antennapod.debug/shared_prefs/MainActivityPrefs.xml
     echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?><map>
         <string name='prefTheme'>$theme</string>
         <long name='de.danoeh.antennapod.preferences.currentlyPlayingMedia' value='1' />
         <long name='de.danoeh.antennapod.preferences.lastPlayedFeedMediaId' value='2432' />
         <boolean name='prefEpisodeCover' value='false' />
+        <string name='prefAutoUpdateIntervall'>0</string>
         </map>" > tmp
     adb push tmp /data/data/de.danoeh.antennapod.debug/shared_prefs/de.danoeh.antennapod.debug_preferences.xml
     rm tmp
@@ -56,7 +72,7 @@ function resetDatabase() {
 
 function screenshot() {
     filename=$1
-    sleep 6
+    sleep 8
     adb exec-out screencap -p > $filename
 }
 
@@ -76,55 +92,78 @@ function switchLanguage() {
 
 function createScreenshots() {
     language=$1
+    screnshotPrefix=$2
     folder="app/src/main/play/screenshots/raw"
     mkdir -p "$folder/$language"
     switchLanguage $language
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "SubscriptionFragment"
-    screenshot "$folder/$language/00.png"
+    screenshot "$folder/$language/${screnshotPrefix}00.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "QueueFragment"
     sleep 1
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --ez "open_player" "true"
-    screenshot "$folder/$language/01.png"
+    screenshot "$folder/$language/${screnshotPrefix}01.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "QueueFragment"
     sleep 1
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --ez "open_drawer" "true"
-    screenshot "$folder/$language/02.png"
+    screenshot "$folder/$language/${screnshotPrefix}02.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "EpisodesFragment"
-    screenshot "$folder/$language/03a.png"
+    screenshot "$folder/$language/${screnshotPrefix}03a.png"
 
     resetDatabase 1
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "EpisodesFragment"
-    screenshot "$folder/$language/03b.png"
+    screenshot "$folder/$language/${screnshotPrefix}03b.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "QueueFragment"
-    screenshot "$folder/$language/04.png"
+    screenshot "$folder/$language/${screnshotPrefix}04.png"
 
     resetDatabase 0
     adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "AddFeedFragment"
-    screenshot "$folder/$language/05.png"
+    screenshot "$folder/$language/${screnshotPrefix}05.png"
 }
 
-createScreenshots "en-US"
-createScreenshots "de-DE"
-createScreenshots "es-ES"
-createScreenshots "fr-FR"
-createScreenshots "he-IL"
-createScreenshots "it-IT"
-createScreenshots "nl-NL"
+################### Create screenshots ###################
 
-switchLanguage "en-US"
-adb shell settings put global sysui_demo_allowed 0
+function createScreenshotsAllLanguages() {
+    screnshotPrefix=$1
+    createScreenshots "en-US" "$screnshotPrefix"
+    createScreenshots "de-DE" "$screnshotPrefix"
+    createScreenshots "es-ES" "$screnshotPrefix"
+    createScreenshots "fr-FR" "$screnshotPrefix"
+    createScreenshots "he-IL" "$screnshotPrefix"
+    createScreenshots "it-IT" "$screnshotPrefix"
+    createScreenshots "nl-NL" "$screnshotPrefix"
+}
 
-################### Delete emulator ###################
-adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill && sleep 10; done
-$ANDROID_HOME/tools/bin/avdmanager delete avd -n "AntennaPodScreenshots"
+setupEmulator "
+hw.lcd.density=420
+hw.lcd.width=1080
+hw.lcd.height=1920"
+install
+createScreenshotsAllLanguages ""
+cleanup
+
+setupEmulator "
+hw.lcd.density=320
+hw.lcd.height=1920
+hw.lcd.width=1200"
+install
+createScreenshotsAllLanguages "tablet-7-"
+cleanup
+
+setupEmulator "
+hw.lcd.density=320
+hw.lcd.height=1600
+hw.lcd.width=2560"
+install
+createScreenshotsAllLanguages "tablet-10-"
+cleanup
 

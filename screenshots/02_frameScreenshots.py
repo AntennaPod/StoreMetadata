@@ -27,7 +27,7 @@ def generate_text(text, font):
         + '" /tmp/text.png')
 
 
-def generate_tablet_text(text, font):
+def generate_large_tablet_text(text, font):
     print("  " + text.replace("\n", "\\n"))
     os.system(
         "magick -size 1730x350 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
@@ -36,6 +36,14 @@ def generate_tablet_text(text, font):
         + text
         + '" /tmp/text.png')
 
+def generate_small_tablet_text(text, font):
+    print("  " + text.replace("\n", "\\n"))
+    os.system(
+        "magick -size 1200x550 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
+        + font
+        + ' -annotate 0 "'
+        + text
+        + '" /tmp/text.png')
 
 def simple_phone(text, background_file, screenshot_file, output_file, font):
     generate_text(text, font)
@@ -47,14 +55,21 @@ def simple_phone(text, background_file, screenshot_file, output_file, font):
     os.system('mogrify -resize 1120 "' + output_file + '"')
 
 
-def simple_tablet(text, screenshot_file, output_file, font):
-    generate_tablet_text(text, font)
+def simple_large_tablet(text, screenshot_file, output_file, font):
+    generate_large_tablet_text(text, font)
     os.system('magick ' + screenshot_file + ' -resize 1285 "/tmp/resized-image.png"')
-    os.system('magick templates/tablet.png '
+    os.system('magick templates/tablet-10.png '
               + '/tmp/resized-image.png -geometry +224+459 -composite '
               + '/tmp/text.png -geometry +0+0 -composite '
               + output_file)
 
+def simple_small_tablet(text, screenshot_file, output_file, font):
+    generate_small_tablet_text(text, font)
+    os.system('magick ' + screenshot_file + ' -resize 850 "/tmp/resized-image.png"')
+    os.system('magick templates/tablet-7.png '
+              + '/tmp/resized-image.png -geometry +170+765 -composite '
+              + '/tmp/text.png -geometry +0+0 -composite '
+              + output_file)
 
 def two_phones(text, raw_screenshots_path, output_file, font):
     generate_text(text, font)
@@ -83,6 +98,7 @@ def generate_screenshots(language, font):
     raw_screenshots_path = 'raw/' + language
     output_path = '../listings/' + language + "/graphics"
     Path(output_path + '/phone-screenshots').mkdir(parents=True, exist_ok=True)
+    Path(output_path + '/tablet-screenshots').mkdir(parents=True, exist_ok=True)
     Path(output_path + '/large-tablet-screenshots').mkdir(parents=True, exist_ok=True)
 
     if not Path(raw_screenshots_path + '/00.png').is_file():
@@ -106,11 +122,11 @@ def generate_screenshots(language, font):
     simple_phone(texts["05.png"], 'background2.png', raw_screenshots_path + '/05.png', output_path + '/phone-screenshots/05.new.png', font)
     overwrite_if_different(output_path + '/phone-screenshots/05.new.png', output_path + '/phone-screenshots/05.png')
 
-    if not Path(raw_screenshots_path + '/tablet.png').is_file():
-        raw_screenshots_path = 'raw/en-US'
-
-    simple_tablet(texts["tablet.png"], raw_screenshots_path + '/tablet.png', output_path + '/large-tablet-screenshots/tablet.new.png', font)
+    simple_large_tablet(texts["tablet.png"], raw_screenshots_path + '/tablet-10-02.png', output_path + '/large-tablet-screenshots/tablet.new.png', font)
     overwrite_if_different(output_path + '/large-tablet-screenshots/tablet.new.png', output_path + '/large-tablet-screenshots/tablet.png')
+
+    simple_small_tablet(texts["00.png"], raw_screenshots_path + '/tablet-7-02.png', output_path + '/tablet-screenshots/tablet.new.png', font)
+    overwrite_if_different(output_path + '/tablet-screenshots/tablet.new.png', output_path + '/tablet-screenshots/tablet.png')
 
 def check_os():
     """Currently only working on Linux."""
