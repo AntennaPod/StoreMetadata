@@ -1,9 +1,9 @@
 {
-    "02.png": "Lyt med din\nforetrukne hastighed",
-    "01.png": "Vælg det tema\nder passer dig bedst",
-    "04.png": "Tilpas AntennaPod\ntil dine behov",
-    "05.png": "Udforsk tusindvis\naf gode podcasts",
-    "00.png": "Abonnér på alle dine\nfavorit-podcasts",
-    "03.png": "Spar tid med\nautomatisk download",
-    "tablet.png": "Nyd dine podcasts. Hvor og når du vil."
+    "playback_speed": "Lyt med din\nforetrukne hastighed",
+    "theme": "Vælg det tema\nder passer dig bedst",
+    "customize": "Tilpas AntennaPod\ntil dine behov",
+    "discover": "Udforsk tusindvis\naf gode podcasts",
+    "subscribe_favorite": "Abonnér på alle dine\nfavorit-podcasts",
+    "auto_downloads": "Spar tid med\nautomatisk download",
+    "anywhere": "Nyd dine podcasts. Hvor og når du vil."
 }

@@ -104,28 +104,28 @@ def generate_screenshots(language, font):
     if not Path(raw_screenshots_path + '/00.png').is_file():
         raw_screenshots_path = 'raw/en-US'
 
-    simple_phone(texts["04.png"], 'background2.png', raw_screenshots_path + '/02.png', output_path + '/phone-screenshots/00.new.png', font)
+    simple_phone(texts["customize"], 'background2.png', raw_screenshots_path + '/02.png', output_path + '/phone-screenshots/00.new.png', font)
     overwrite_if_different(output_path + '/phone-screenshots/00.new.png', output_path + '/phone-screenshots/00.png')
 
-    simple_phone(texts["00.png"], 'background1.png', raw_screenshots_path + '/00.png', output_path + '/phone-screenshots/01.new.png', font)
+    simple_phone(texts["subscribe_favorite"], 'background1.png', raw_screenshots_path + '/00.png', output_path + '/phone-screenshots/01.new.png', font)
     overwrite_if_different(output_path + '/phone-screenshots/01.new.png', output_path + '/phone-screenshots/01.png')
 
-    two_phones(texts["01.png"], raw_screenshots_path, output_path + '/phone-screenshots/02.new.png', font)
+    two_phones(texts["theme"], raw_screenshots_path, output_path + '/phone-screenshots/02.new.png', font)
     overwrite_if_different(output_path + '/phone-screenshots/02.new.png', output_path + '/phone-screenshots/02.png')
 
-    simple_phone(texts["02.png"], 'background1.png', raw_screenshots_path + '/01.png', output_path + '/phone-screenshots/03.new.png', font)
+    simple_phone(texts["playback_speed"], 'background1.png', raw_screenshots_path + '/01.png', output_path + '/phone-screenshots/03.new.png', font)
     overwrite_if_different(output_path + '/phone-screenshots/03.new.png', output_path + '/phone-screenshots/03.png')
 
-    simple_phone(texts["03.png"], 'background2.png', raw_screenshots_path + '/04.png', output_path + '/phone-screenshots/04.new.png', font)
+    simple_phone(texts["auto_downloads"], 'background2.png', raw_screenshots_path + '/04.png', output_path + '/phone-screenshots/04.new.png', font)
     overwrite_if_different(output_path + '/phone-screenshots/04.new.png', output_path + '/phone-screenshots/04.png')
 
-    simple_phone(texts["05.png"], 'background1.png', raw_screenshots_path + '/05.png', output_path + '/phone-screenshots/05.new.png', font)
+    simple_phone(texts["discover"], 'background1.png', raw_screenshots_path + '/05.png', output_path + '/phone-screenshots/05.new.png', font)
     overwrite_if_different(output_path + '/phone-screenshots/05.new.png', output_path + '/phone-screenshots/05.png')
 
-    simple_large_tablet(texts["tablet.png"], raw_screenshots_path + '/tablet-10-02.png', output_path + '/large-tablet-screenshots/tablet.new.png', font)
+    simple_large_tablet(texts["anywhere"], raw_screenshots_path + '/tablet-10-02.png', output_path + '/large-tablet-screenshots/tablet.new.png', font)
     overwrite_if_different(output_path + '/large-tablet-screenshots/tablet.new.png', output_path + '/large-tablet-screenshots/tablet.png')
 
-    simple_small_tablet(texts["00.png"], raw_screenshots_path + '/tablet-7-02.png', output_path + '/tablet-screenshots/tablet.new.png', font)
+    simple_small_tablet(texts["subscribe_favorite"], raw_screenshots_path + '/tablet-7-02.png', output_path + '/tablet-screenshots/tablet.new.png', font)
     overwrite_if_different(output_path + '/tablet-screenshots/tablet.new.png', output_path + '/tablet-screenshots/tablet.png')
 
 def check_os():

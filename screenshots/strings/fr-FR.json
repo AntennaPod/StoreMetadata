@@ -1,9 +1,9 @@
 {
-    "00.png": "Abonnez-vous à vos \npodcasts favoris",
-    "02.png": "Modifiez la \nvitesse de lecture",
-    "03.png": "Téléchargez \nautomatiquement",
-    "01.png": "Utilisez le thème \nqui vous convient",
-    "04.png": "Paramétrez AntennaPod \nselon vos besoins",
-    "05.png": "Découvrez des \nmilliers de podcasts",
-    "tablet.png": "Vos podcasts accessibles à tout moment."
+    "subscribe_favorite": "Abonnez-vous à vos \npodcasts favoris",
+    "playback_speed": "Modifiez la \nvitesse de lecture",
+    "auto_downloads": "Téléchargez \nautomatiquement",
+    "theme": "Utilisez le thème \nqui vous convient",
+    "customize": "Paramétrez AntennaPod \nselon vos besoins",
+    "discover": "Découvrez des \nmilliers de podcasts",
+    "anywhere": "Vos podcasts accessibles à tout moment."
 }

@@ -1,9 +1,9 @@
 {
-    "00.png": "Abonner på alle favoritt-\npodkastene dine",
-    "02.png": "Spill av smart med\nhastigheten du velger",
-    "03.png": "Spar tid med\nautomatiske nedlastinger",
-    "01.png": "Velg temaet som\npasser deg best",
-    "04.png": "Tilpass AntennaPod\netter dine behov",
-    "05.png": "Oppdag tusenvis av\nfantastiske podkaster",
-    "tablet.png": "Nyt podkastene dine. Når og hvor du vil."
+    "subscribe_favorite": "Abonner på alle favoritt-\npodkastene dine",
+    "playback_speed": "Spill av smart med\nhastigheten du velger",
+    "auto_downloads": "Spar tid med\nautomatiske nedlastinger",
+    "theme": "Velg temaet som\npasser deg best",
+    "customize": "Tilpass AntennaPod\netter dine behov",
+    "discover": "Oppdag tusenvis av\nfantastiske podkaster",
+    "anywhere": "Nyt podkastene dine. Når og hvor du vil."
 }

@@ -1,9 +1,9 @@
 {
-    "00.png": "Iscriviti a tutti\ni tuoi podcast preferiti",
-    "02.png": "Riproduci gli episodi\nalla velocità che preferisci",
-    "03.png": "Risparmia tempo grazie\nai download automatici",
-    "01.png": "Scegli il tema\npiù adatto a te",
-    "04.png": "Personalizza AntennaPod\ncome più ti piace",
-    "05.png": "Scopri migliaia\ndi nuovi podcast",
-    "tablet.png": "Ascolta i tuoi podcast dove e quando vuoi."
+    "subscribe_favorite": "Iscriviti a tutti\ni tuoi podcast preferiti",
+    "playback_speed": "Riproduci gli episodi\nalla velocità che preferisci",
+    "auto_downloads": "Risparmia tempo grazie\nai download automatici",
+    "theme": "Scegli il tema\npiù adatto a te",
+    "customize": "Personalizza AntennaPod\ncome più ti piace",
+    "discover": "Scopri migliaia\ndi nuovi podcast",
+    "anywhere": "Ascolta i tuoi podcast dove e quando vuoi."
 }
