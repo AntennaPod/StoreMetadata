@@ -5,6 +5,7 @@ cleanup() {
     adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill && sleep 5; done
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
     $ANDROID_HOME/tools/bin/avdmanager delete avd -n "AntennaPodScreenshots" || true
+    rm nohup.out || true
 }
 trap cleanup INT TERM
 
@@ -108,9 +109,7 @@ function createScreenshots() {
     screenshot "$folder/$language/${screnshotPrefix}01.png"
 
     resetDatabase 0
-    adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "QueueFragment"
-    sleep 1
-    adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --ez "open_drawer" "true"
+    adb shell am start -n "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity" --es "fragment_tag" "HomeFragment"
     screenshot "$folder/$language/${screnshotPrefix}02.png"
 
     resetDatabase 0
