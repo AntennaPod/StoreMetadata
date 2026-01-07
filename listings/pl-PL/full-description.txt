@@ -1,8 +1,8 @@
 AntennaPod to menedżer i odtwarzacz podcastów, który zapewnia natychmiastowy dostęp do milionów bezpłatnych i płatnych podcastów, od niezależnych podcasterów po duże wydawnictwa, takie jak BBC, NPR i CNN. Dodawaj, importuj i eksportuj kanały bezproblemowo, korzystając z bazy danych Apple Podcasts, plików OPML lub prostych adresów URL RSS.
 Pobieraj, streamuj lub dodawaj do kolejki odcinki i korzystaj z nich jak chcesz, przy pomocy konfigurowalnej prędkości odtwarzania, wsparcia rozdziałów i wyłącznika czasowego.
-Oszczędź czas, baterię i ilość pobranych danych komórkowych dzięki wielu możliwościom automatyzacji pobierania odcinków (określanie czasu, interwałów i sieci WiFi) i kasowania odcinków (na podstawie twoich ulubionych i ustawień opóźnienia)
+Oszczędź czas, baterię i ilość pobranych danych komórkowych dzięki wielu możliwościom automatyzacji pobierania odcinków (określanie czasu, interwałów i sieci Wi-Fi) i kasowania odcinków (na podstawie twoich ulubionych i ustawień opóźnienia).
 
-Stworzony przez miłośników podcastów, AntennaPod jest darmowy w każdym znaczeniu tego słowa: otwarty kod, bez opłat, bez reklam.
+Stworzony przez miłośników podcastów, AntennaPod jest darmowy w każdym znaczeniu tego słowa: otwarty kod, brak opłat, brak reklam.
 
 <b>Importuj, organizuj i odtwarzaj</b>
 • Zarządzaj odtwarzaniem z dowolnego miejsca: widgetu na ekranie głównym, powiadomienia systemowego, pilota na kablu słuchawkowym, urządzeń bluetooth
@@ -15,8 +15,8 @@ Stworzony przez miłośników podcastów, AntennaPod jest darmowy w każdym znac
 • Odnajdź ten jedyny odcinek dzięki historii odtwarzania lub przez wyszukiwanie po tytułach i opisach
 • Udostępniaj odcinki i kanały dzięki zaawansowanym opcjom mediów społecznościowych i email, usłudze gPodder.net oraz eksporcie OPML
 
- <b>Kontroluj</b> 
-• Kontroluj automatyczne pobieranie: wybierz kanały, oszczędzaj dane komórkowe, wybierz określone sieci WiFi, pobieraj tylko podczas ładowania, ustaw czas dnia lub częstotliwość
+<b>Kontroluj</b> 
+• Kontroluj automatyczne pobieranie: wybierz kanały, oszczędzaj dane komórkowe, wybierz określone sieci Wi-Fi, pobieraj tylko podczas ładowania, ustaw czas dnia lub częstotliwość
 • Kontroluj użycie pamięci poprzez ustawienie ilości zachowywanych odcinków, inteligentne kasowanie oraz wybranie domyślnej lokalizacji
 • Dostosuj wygląd dzięki motywom: ciemny, jasny, czarny (dla ekranów AMOLED)
 • Twórz kopie zapasowe swoich subskrypcji dzięki integracji gPodder.net lub eksportuj je do pliku OPML
@@ -27,5 +27,5 @@ AntennaPod jest ciągle rozwijane przez ochotników. Ty też możesz pomóc, kod
 Życzliwi użytkownicy forum chętnie odpowiedzą na twoje pytania. Zapraszamy do rozmów o funkcjach programu i generalnie o podcastingu.
 https://forum.antennapod.org/
 
-Chcesz pomóc tłumaczyć AntennaPod - możesz to zrobić na Transifex:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod jest tłumaczony na stronie weblate przez wolontariuszy takich jak ty:
+https://hosted.weblate.org/engage/antennapod

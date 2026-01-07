@@ -27,5 +27,5 @@ AntennaPod je aktivně vyvíjen dobrovolníky. Můžete přispět také svým k�
 Naše přátelská členská základna vám ráda zodpoví jakékoli dotazy. Zveme vás k diskuzi o AntennaPodu nebo i podcastech obecně.
 https://forum.antennapod.org/
 
-Na Transifexu můžete pomoct s překladem:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod je překládán na Weblate dobrovolníky, jako jste vy:
+https://hosted.weblate.org/engage/antennapod

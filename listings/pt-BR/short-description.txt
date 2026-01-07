@@ -1,1 +1,1 @@
-Um player de podcasts fácil de usar, flexível e de código aberto
+Gerenciador e reprodutor de podcast fácil de usar, flexível e de código aberto

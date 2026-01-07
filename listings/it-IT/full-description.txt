@@ -11,7 +11,7 @@ Creato da appassionati di podcast, AntennaPod è libero in tutti i sensi: open s
 • Accedi ai feed e agli episodi protetti da password
 
 <b>Tieni traccia, condividi & ricerca</b>
-• Tieni traccia dei migliori episodi di sempre segnandoli come preferiti
+• Tieni traccia dei migliori episodi di sempre contrassegnandoli come preferiti
 • Trova proprio l'episodio che cercavi grazie alla cronologia delle riproduzioni o cercando nei titoli e nelle note degli episodi
 • Condividi episodi e feed tramite opzioni avanzate di condivisione via social o email, i servizi di gPodder.net o esportando in formato OPML
 
@@ -27,5 +27,5 @@ AntennaPod è sviluppato da volontari. Anche tu puoi contribuire, con il codice 
 I simpatici membri del nostro forum sono felici di rispondere a qualsiasi domanda tu possa avere. Ti invitiamo anche a discutere di funzionalità e di podcasting in generale.
 https://forum.antennapod.org/
 
-Transifex è dove puoi contribuire alla traduzione:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod è tradotto su Weblate da volontari come te:
+https://hosted.weblate.org/engage/antennapod

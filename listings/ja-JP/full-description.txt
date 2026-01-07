@@ -1,6 +1,6 @@
 AntennaPod is a podcast manager and player that gives you instant access to millions of free and paid podcasts, from independent podcasters to large publishing houses such as the BBC, NPR and CNN. Add, import and export their feeds hassle-free using the Apple Podcasts database, OPML files or simple RSS URLs.
 エピソードをダウンロード、ストリーミング、またはキューに入れて、調整可能な再生速度、チャプターサポート、スリープタイマーで、お好きな方法でお楽しみください。
-エピソードのダウンロード (時間、間隔、WiFi ネットワークの指定) とエピソードの削除 (お気に入りと遅延設定に基づく) の強力な自動化コントロールにより、労力、バッテリー消費量、モバイルデータ通信使用量を節約できます。
+エピソードのダウンロード (時間、間隔、Wi-Fi ネットワークの指定) とエピソードの削除 (お気に入りと遅延設定に基づく) の強力な自動化コントロールにより、労力、バッテリー消費量、モバイルデータ通信使用量を節約できます。
 
 ポッドキャスト愛好家によって作られた AntennaPod は、オープンソース、無料、広告なしなど、あらゆる意味でフリーです。
 
@@ -16,7 +16,7 @@ AntennaPod is a podcast manager and player that gives you instant access to mill
 • 高度なソーシャルメディア、メールオプション、gPodder.net サービス、OPML エクスポートを介してエピソードとフィードを共有します
 
 <b>システムをコントロール</b>
-• 自動ダウンロードの制御: フィードの選択、モバイル通信ネットワークの除外、特定の WiFi ネットワークの選択、充電時以外のダウンロードやダウンロードの時間や間隔の設定
+• 自動ダウンロードの制御: フィードの選択、モバイル通信ネットワークの除外、特定の Wi-Fi ネットワークの選択、充電時以外のダウンロードやダウンロードの時間や間隔の設定
 • キャッシュされるエピソードの量を設定、スマート削除、お好みの場所を選択してストレージを管理します
 • ライトとダークのテーマを使用して環境に適応します
 • gPodder.net 統合と OPML エクスポートを使用して購読をバックアップします
@@ -27,5 +27,5 @@ AntennaPod はボランティアによって活発に開発中です。コード
 フレンドリーなフォーラムメンバーが、あらゆる質問に喜んでお答えします。機能やポッドキャスト全般についてもご相談ください。
 https://forum.antennapod.org/
 
-Transifex は翻訳を支援する場所です:
-https://www.transifex.com/antennapod/antennapod
+AntennaPod は Weblate 上であなたのようなボランティアによって翻訳が行われています。
+https://hosted.weblate.org/engage/antennapod

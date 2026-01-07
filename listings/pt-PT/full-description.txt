@@ -1,31 +1,31 @@
-AntennaPod é um gestor e reprodutor de podcasts que lhe permite aceder a milhões de podcasts, gratuitos ou pagos, sejam eles publicadores independentes ou grandes cadeias tais como as estações BBC, NPR e CNN. A adição de fontes é muito fácil através da base de dados Apple Podcasts, ficheiros OPML e fontes RSS. 
-Pode descarregar, emitir ou colocar episódios na fila de reprodução ao seu gosto, pode utilizar velocidades variáveis de reprodução, tem suporte a capítulos e um temporizador. 
-Poupe tempo, economize bateria e dados móveis através dos mecanismos de controlo de descargas de episódios (possibilidade de especificar intervalos ou horas para as descargas e redes Wi-Fi) e de eliminação de episódios (de acordo com as suas preferências).
+O AntennaPod é um gestor e leitor de podcasts que lhe permite aceder a milhões de podcasts, gratuitos e pagos, desde podcasters independentes até grandes editoras, como a BBC, NPR e CNN. Adicione, importe e exporte os seus feeds sem complicações, utilizando a base de dados Apple Podcasts, ficheiros OPML ou links RSS.
+Pode transferir, reproduzir ou colocar episódios na fila de reprodução e desfrutá-los da forma que preferir, com velocidades de reprodução ajustáveis, suporte a capítulos e um temporizador.
+Poupe tempo, economize bateria e dados móveis com os controlos avançados para transferir episódios (especificando horários, intervalos e redes Wi-Fi) e eliminar episódios (de acordo com as suas preferências).
 
-Criado por entusiastas de podcasts, AntennaPod é livre em todos os sentidos da palavra: open source, gratuito e sem publicidade.
+Criado por entusiastas de podcasts, o AntennaPod é livre em todos os sentidos da palavra: código aberto, sem custos e sem publicidade.
 
-<b>Importação, organização e reprodução</b>
-•  Gestão de podcasts através do widget, barra de notificações e controlos de auriculares ou bluetooth
-•  Adicione e importe fontes via Apple Podcasts, gPodder.net, fyyd, Podcast Index ou através de ficheiros OPML e ligações ATOM e RSS
-• Velocidade variável de reprodução, suporte a capítulos, memorização da posição de reprodução e um temporizador avançado (agite para repor, baixar e aumentar o volume)
-•  Acesso a fontes e episódios protegidos por palavra-passe
+<b>Importar, organizar e reproduzir</b>
+• Controle a gestão de reprodução de podcasts através do widget, barra de notificações e controlos de auriculares ou Bluetooth
+• Adicione e importe feeds via Apple Podcasts, gPodder.net, fyyd, Podcast Index ou através de ficheiros OPML e links RSS ou Atom
+• Desfrute da audição à sua maneira com velocidade de reprodução ajustável, suporte de capítulos, posição de reprodução memorizada e um temporizador avançado (agite para repor, diminuir o volume)
+• Aceda a feeds e episódios protegidos por palavra-passe
 
-<b>Monitorizar, partilhar e apreciar</b>
-•  Monitorize os seus episódio preferidos marcando-os como favoritos
+<b>Seguir, partilhar e apreciar</b>
+• Siga os seus episódios preferidos marcando-os como favoritos
 • Localize um episódio no histórico de reprodução ou através de uma pesquisa por título ou notas
-• Partilhe episódios e fontes nas redes sociais, por e-mail, no diretório gPodder.net ou através de ficheiros OPML
+• Partilhe episódios e podcasts nas redes sociais, por e-mail, nos serviços gPodder.net ou através de ficheiros OPML
 
-<b>Controlo de sistema</b>
-• Controle todas as descargas automáticas: escolha as fontes, exclua redes móveis, especifique as redes Wi-Fi, indique se o telefone deve estar a ser carregado e defina as horas ou intervalos das descargas
-• Gestão do armazenamento através da cache de episódios, da eliminação inteligente e selecionando a localização dos dados
-• Adapte-se ao seu ambiente através dos temas claro ou escuro
-•  Guarde as suas subscrições com a integração gPodder.net ou através da exportação OPML
+<b>Controlo do sistema</b>
+• Controle todas as transferências automáticas: escolha os podcasts, exclua redes móveis, especifique as redes Wi-Fi, indique se o telefone deve estar a ser carregado e defina as horas ou intervalos para as transferências
+• Faça a gestão do armazenamento indicando quantos episódios quer manter, a eliminação inteligente e qual a localização dos ficheiros
+• Adapte-se ao ambiente através dos temas claro ou escuro
+• Guarde as suas subscrições com a integração gPodder.net ou através da exportação OPML
 
 <b>Integrar a comunidade AntennaPod!</b>
-O AntennaPod é desenvolvido por voluntários. Você também pode contribuir na programação ou reportando os erros encontrados!
+AntennaPod é desenvolvido por voluntários. Também pode participar, seja na programação ou reportando os erros encontrados!
 
-Os membros do nosso fórum podem ajudar-vos em relação às vossas dúvidas. Sinta-se à vontade para propor funcionalidades ou simplesmente falar connosco.
+Os membros do nosso fórum terão todo o gosto em ajudar com qualquer dúvida que tenha. Sinta-se à vontade para propor funcionalidades ou simplesmente falar connosco.
 https://forum.antennapod.org/
 
-Transifex é o local certo para ajudar a traduzir a aplicação:
-https://www.transifex.com/antennapod/antennapod
+O AntennaPod é traduzido no Weblate por voluntários. Junte-se a nós em:
+https://hosted.weblate.org/engage/antennapod
