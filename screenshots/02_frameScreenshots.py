@@ -2,6 +2,7 @@
 import os
 import subprocess
 import platform
+import shutil
 from pathlib import Path
 import json
 
@@ -30,65 +31,105 @@ def generate_text(text, font):
 def generate_large_tablet_text(text, font):
     print("  " + text.replace("\n", "\\n"))
     os.system(
-        "magick -size 1730x350 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
+        "magick -size 1730x400 xc:none -gravity Center -pointsize 75 -fill '#167df0' -font "
         + font
         + ' -annotate 0 "'
         + text
         + '" /tmp/text.png')
+
 
 def generate_small_tablet_text(text, font):
     print("  " + text.replace("\n", "\\n"))
     os.system(
-        "magick -size 1200x550 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
+        "magick -size 1200x650 xc:none -gravity Center -pointsize 80 -fill '#167df0' -font "
         + font
         + ' -annotate 0 "'
         + text
         + '" /tmp/text.png')
 
-def simple_phone(text, background_file, screenshot_file, output_file, font):
-    generate_text(text, font)
-    os.system('magick templates/' + background_file
-              + ' templates/phone.png -geometry +0+0 -composite '
-              + screenshot_file + ' -geometry +306+992 -composite '
-              + '/tmp/text.png -geometry +0+0 -composite '
-              + output_file)
-    os.system('mogrify -resize 1120 "' + output_file + '"')
-
-
-def simple_large_tablet(text, screenshot_file, output_file, font):
-    generate_large_tablet_text(text, font)
-    os.system('magick ' + screenshot_file + ' -resize 1285 "/tmp/resized-image.png"')
-    os.system('magick templates/tablet-10.png '
-              + '/tmp/resized-image.png -geometry +224+459 -composite '
-              + '/tmp/text.png -geometry +0+0 -composite '
-              + output_file)
-
-def simple_small_tablet(text, screenshot_file, output_file, font):
-    generate_small_tablet_text(text, font)
-    os.system('magick ' + screenshot_file + ' -resize 850 "/tmp/resized-image.png"')
-    os.system('magick templates/tablet-7.png '
-              + '/tmp/resized-image.png -geometry +170+765 -composite '
-              + '/tmp/text.png -geometry +0+0 -composite '
-              + output_file)
-
-def two_phones(text, raw_screenshots_path, output_file, font):
-    generate_text(text, font)
-    os.system('magick templates/background2.png '
-              + 'templates/twophones-a.png -geometry +0+10 -composite '
-              + raw_screenshots_path + '/03a.png -geometry +119+992 -composite '
-              + 'templates/twophones-b.png -geometry +0+0 -composite '
-              + raw_screenshots_path + '/03b.png -geometry +479+1540 -composite '
-              + '/tmp/text.png -geometry +0+0 -composite '
-              + output_file)
-    os.system('mogrify -resize 1120 "' + output_file + '"')
 
 def overwrite_if_different(new, original):
     proc = subprocess.Popen(["magick", "compare", "-metric", "PSNR", new, original, "/tmp/difference.png"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output = proc.stderr.read().decode(encoding='utf-8')
-    if output.find("(0)") != -1:
+    if output.find("(1)") != -1:
         os.remove(new)
     else:
-        os.replace(new, original)
+        shutil.move(new, original)
+
+
+def simple_frame(text, background_file, raw_base_path, screenshot_filename, output_path_base, output_filename, font):
+    # Phone
+    generate_text(text, font)
+    os.system('magick ' + raw_base_path + '/' + screenshot_filename + ' -resize 1080 "/tmp/resized-image.png"')
+    os.system('magick templates/phone/' + background_file
+              + ' templates/phone/frame.png -geometry +0+0 -composite'
+              + ' /tmp/resized-image.png -geometry +306+992 -composite'
+              + ' /tmp/text.png -geometry +0+0 -composite'
+              + ' /tmp/framed.png')
+    os.system('mogrify -resize 1120 "/tmp/framed.png"')
+    overwrite_if_different("/tmp/framed.png", output_path_base + '/phone-screenshots/' + output_filename)
+
+    # Small tablet
+    generate_small_tablet_text(text, font)
+    os.system('magick ' + raw_base_path + '/tablet-7-' + screenshot_filename + ' -resize 855 "/tmp/resized-image.png"')
+    os.system('magick templates/tablet-7/' + background_file
+              + ' templates/tablet-7/frame.png -geometry +0+0 -composite'
+              + ' /tmp/resized-image.png -geometry +168+765 -composite'
+              + ' /tmp/text.png -geometry +0+0 -composite'
+              + ' /tmp/framed.png')
+    overwrite_if_different("/tmp/framed.png", output_path_base + '/tablet-screenshots/' + output_filename)
+
+    # Large tablet
+    generate_large_tablet_text(text.replace("\n", " "), font)
+    os.system('magick ' + raw_base_path + '/tablet-10-' + screenshot_filename + ' -resize 1294 "/tmp/resized-image.png"')
+    os.system('magick templates/tablet-10/' + background_file
+              + ' templates/tablet-10/frame.png -geometry +0+0 -composite'
+              + ' /tmp/resized-image.png -geometry +215+439 -composite'
+              + ' /tmp/text.png -geometry +0+0 -composite'
+              + ' /tmp/framed.png')
+    overwrite_if_different("/tmp/framed.png", output_path_base + '/large-tablet-screenshots/' + output_filename)
+
+
+def two_frames(text, raw_base_path, output_path_base, output_filename, font):
+    # Phone
+    generate_text(text, font)
+    os.system('magick ' + raw_base_path + '/03a.png -resize 1080 "/tmp/resized-image-a.png"')
+    os.system('magick ' + raw_base_path + '/03b.png -resize 1080 "/tmp/resized-image-b.png"')
+    os.system('magick templates/phone/background2.png'
+              + ' templates/phone/twoframes-a.png -geometry +0+10 -composite'
+              + ' /tmp/resized-image-a.png -geometry +119+992 -composite'
+              + ' templates/phone/twoframes-b.png -geometry +0+0 -composite'
+              + ' /tmp/resized-image-b.png -geometry +479+1540 -composite'
+              + ' /tmp/text.png -geometry +0+0 -composite'
+              + ' /tmp/framed.png')
+    overwrite_if_different("/tmp/framed.png", output_path_base + '/phone-screenshots/' + output_filename)
+
+    # Small tablet
+    generate_small_tablet_text(text, font)
+    os.system('magick ' + raw_base_path + '/tablet-7-03a.png -resize 855 "/tmp/resized-image-a.png"')
+    os.system('magick ' + raw_base_path + '/tablet-7-03b.png -resize 855 "/tmp/resized-image-b.png"')
+    os.system('magick templates/tablet-7/background2.png'
+              + ' templates/tablet-7/twoframes-a.png -geometry +0+10 -composite'
+              + ' /tmp/resized-image-a.png -geometry +106+765 -composite'
+              + ' templates/tablet-7/twoframes-b.png -geometry +0+0 -composite'
+              + ' /tmp/resized-image-b.png -geometry +282+1291 -composite'
+              + ' /tmp/text.png -geometry +0+0 -composite'
+              + ' /tmp/framed.png')
+    overwrite_if_different("/tmp/framed.png", output_path_base + '/tablet-screenshots/' + output_filename)
+
+    # Large tablet
+    generate_large_tablet_text(text.replace("\n", " "), font)
+    os.system('magick ' + raw_base_path + '/tablet-10-03a.png -resize 1294 "/tmp/resized-image-a.png"')
+    os.system('magick ' + raw_base_path + '/tablet-10-03b.png -resize 1294 "/tmp/resized-image-b.png"')
+    os.system('magick templates/tablet-10/background2.png'
+              + ' templates/tablet-10/twoframes-a.png -geometry +0+10 -composite'
+              + ' /tmp/resized-image-a.png -geometry +125+439 -composite'
+              + ' templates/tablet-10/twoframes-b.png -geometry +0+0 -composite'
+              + ' /tmp/resized-image-b.png -geometry +308+702 -composite'
+              + ' /tmp/text.png -geometry +0+0 -composite'
+              + ' /tmp/framed.png')
+    overwrite_if_different("/tmp/framed.png", output_path_base + '/large-tablet-screenshots/' + output_filename)
+
 
 def generate_screenshots(language, font):
     print(language)
@@ -104,29 +145,12 @@ def generate_screenshots(language, font):
     if not Path(raw_screenshots_path + '/00.png').is_file():
         raw_screenshots_path = 'raw/en-US'
 
-    simple_phone(texts["customize"], 'background2.png', raw_screenshots_path + '/02.png', output_path + '/phone-screenshots/00.new.png', font)
-    overwrite_if_different(output_path + '/phone-screenshots/00.new.png', output_path + '/phone-screenshots/00.png')
-
-    simple_phone(texts["subscribe_favorite"], 'background1.png', raw_screenshots_path + '/00.png', output_path + '/phone-screenshots/01.new.png', font)
-    overwrite_if_different(output_path + '/phone-screenshots/01.new.png', output_path + '/phone-screenshots/01.png')
-
-    two_phones(texts["theme"], raw_screenshots_path, output_path + '/phone-screenshots/02.new.png', font)
-    overwrite_if_different(output_path + '/phone-screenshots/02.new.png', output_path + '/phone-screenshots/02.png')
-
-    simple_phone(texts["playback_speed"], 'background1.png', raw_screenshots_path + '/01.png', output_path + '/phone-screenshots/03.new.png', font)
-    overwrite_if_different(output_path + '/phone-screenshots/03.new.png', output_path + '/phone-screenshots/03.png')
-
-    simple_phone(texts["auto_downloads"], 'background2.png', raw_screenshots_path + '/04.png', output_path + '/phone-screenshots/04.new.png', font)
-    overwrite_if_different(output_path + '/phone-screenshots/04.new.png', output_path + '/phone-screenshots/04.png')
-
-    simple_phone(texts["discover"], 'background1.png', raw_screenshots_path + '/05.png', output_path + '/phone-screenshots/05.new.png', font)
-    overwrite_if_different(output_path + '/phone-screenshots/05.new.png', output_path + '/phone-screenshots/05.png')
-
-    simple_large_tablet(texts["anywhere"], raw_screenshots_path + '/tablet-10-02.png', output_path + '/large-tablet-screenshots/tablet.new.png', font)
-    overwrite_if_different(output_path + '/large-tablet-screenshots/tablet.new.png', output_path + '/large-tablet-screenshots/tablet.png')
-
-    simple_small_tablet(texts["subscribe_favorite"], raw_screenshots_path + '/tablet-7-02.png', output_path + '/tablet-screenshots/tablet.new.png', font)
-    overwrite_if_different(output_path + '/tablet-screenshots/tablet.new.png', output_path + '/tablet-screenshots/tablet.png')
+    simple_frame(texts["customize"], 'background2.png', raw_screenshots_path, '02.png', output_path, '00.png', font)
+    simple_frame(texts["subscribe_favorite"], 'background1.png', raw_screenshots_path, '00.png', output_path, '01.png', font)
+    two_frames(texts["theme"], raw_screenshots_path, output_path, '02.png', font)
+    simple_frame(texts["playback_speed"], 'background1.png', raw_screenshots_path, '01.png', output_path, '03.png', font)
+    simple_frame(texts["auto_downloads"], 'background2.png', raw_screenshots_path, '04.png', output_path, '04.png', font)
+    simple_frame(texts["discover"], 'background1.png', raw_screenshots_path, '05.png', output_path, '05.png', font)
 
 def check_os():
     """Currently only working on Linux."""
