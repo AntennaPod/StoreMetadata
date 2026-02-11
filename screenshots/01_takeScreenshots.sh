@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 
 cleanup() {
     adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill && sleep 5; done
