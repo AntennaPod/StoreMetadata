@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
+
 cleanup() {
     adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill && sleep 5; done
-    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-    $ANDROID_HOME/tools/bin/avdmanager delete avd -n "AntennaPodScreenshots" || true
+    $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager delete avd -n "AntennaPodScreenshots" || true
     rm nohup.out || true
 }
 trap cleanup INT TERM
@@ -13,9 +13,8 @@ trap cleanup INT TERM
 
 function setupEmulator() {
     emulatorConfig=$1
-    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
     cleanup
-    echo no | $ANDROID_HOME/tools/bin/avdmanager create avd --force --name "AntennaPodScreenshots" --abi google_apis/x86_64 --package 'system-images;android-31;google_apis;x86_64'
+    echo no | $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager create avd --force --name "AntennaPodScreenshots" --abi google_apis/x86_64 --package 'system-images;android-31;google_apis;x86_64'
     echo "
 disk.dataPartition.size=6G
 hw.battery=yes
@@ -34,7 +33,6 @@ $emulatorConfig
 }
 
 function install() {
-    export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
     adb root
 
     adb uninstall de.danoeh.antennapod.debug || true
@@ -50,7 +48,7 @@ function install() {
 function resetDatabase() {
     theme=$1
     adb shell am force-stop de.danoeh.antennapod.debug
-    adb shell rm /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db-journal
+    adb shell rm /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db-journal || true
     adb push app/src/play/play/screenshots/ScreenshotsDatabaseExport.db /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db
     adb shell chmod 777 /data/data/de.danoeh.antennapod.debug/databases
     adb shell chmod 777 /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db
