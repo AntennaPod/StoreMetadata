@@ -15,7 +15,7 @@ function setupEmulator() {
     emulatorConfig=$1
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
     cleanup
-    echo no | $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager create avd --force --name "AntennaPodScreenshots" --abi google_apis/x86_64 --package 'system-images;android-36;google_apis;x86_64'
+    echo no | $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager create avd --force --name "AntennaPodScreenshots" --abi google_apis/x86_64 --package 'system-images;android-31;google_apis;x86_64'
     echo "
 disk.dataPartition.size=6G
 hw.battery=yes
