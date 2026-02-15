@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-
 cleanup() {
     adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill && sleep 5; done
     $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager delete avd -n "AntennaPodScreenshots" || true
