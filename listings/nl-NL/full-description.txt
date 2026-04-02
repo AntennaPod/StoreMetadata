@@ -27,5 +27,5 @@ AntennaPod wordt regelmatig geüpdatet door vrijwilligers. En jij kan ook helpen
 De vriendelijke leden van ons forum helpen je graag met welke vraag dan ook. Deel gerust ook ideëen voor nieuwe functies of podcasts in het algemeen.
 https://forum.antennapod.org/
 
-AntennaPod wordt op Weblate vertaald door vrijwilligers zoals jij::
+AntennaPod wordt op Weblate vertaald door vrijwilligers zoals jij:
 https://hosted.weblate.org/engage/antennapod
