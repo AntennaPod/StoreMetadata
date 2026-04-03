@@ -16,6 +16,7 @@ langs_and_fonts = {
     'it-IT': 'Sarabun-Bold',
     'es-ES': 'Sarabun-Bold'
     'no-NO': 'Sarabun-Bold'
+    'hi-IN': 'Hind-Bold'
 }
 
 

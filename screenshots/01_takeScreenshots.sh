@@ -138,6 +138,7 @@ function createScreenshotsAllLanguages() {
     createScreenshots "it-IT" "$screnshotPrefix"
     createScreenshots "nl-NL" "$screnshotPrefix"
     createScreenshots "nb-NO" "$screnshotPrefix"
+    createScreenshots "hi-IN" "$screnshotPrefix"
 }
 
 setupEmulator "
