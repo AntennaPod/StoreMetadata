@@ -1,8 +1,5 @@
-∙ Add sleep timer based on episode count (@eblis)
-∙ Enable bottom navigation for users who have never changed that setting (@ByteHamster)
-∙ Convert sleep timer to bottom sheet (@ByteHamster)
-∙ New subscriptions selection design (@ByteHamster)
-∙ Improve “Report bug” screen (@MrShecks)
-∙ Add default sort for episode list (@tmatale)
-∙ Open podcast or episode from download log details (@schasi)
-∙ Plus the usual assortment of bug fixes & improvements!
+∙ Rewrite playback service (@ByteHamster, @Sarnyxq and others) - this fixes many playback issues, but do report any regressions!
+∙ UI changes: rename “delete podcast” to “unsubscribe” (@ByteHamster); move Statistics screen to navigation (@amanjn38)
+∙ Multi-select: directly enter multi-select when long-pressing subscriptions; add more actions to (multi-)select menu (@ByteHamster)
+∙ Add Android Auto “For You” recommendations (@brianjcohen)
+∙ Plus an assortment of bug fixes & improvements!
