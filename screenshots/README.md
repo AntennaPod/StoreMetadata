@@ -21,7 +21,7 @@ The script `01_takeScreenshots.sh` takes screenshots and places them in the `raw
 ## Converting to framed screenshots
 If the `raw/LANGUAGE` folder contains localized screenshots, those will be used. The folder can either contain no screenshots or all. If there are no screenshots, the generator script uses the English screenshots instead.
 
-<img src="https://raw.githubusercontent.com/AntennaPod/Branding/master/Screenshots/raw/en-US/00.png" height="200" /> ► <img src="https://raw.githubusercontent.com/AntennaPod/AntennaPod/develop/app/src/main/play/listings/en-US/graphics/phone-screenshots/00.png" height="200" />
+<img src="https://raw.githubusercontent.com/AntennaPod/Branding/master/Screenshots/raw/en-US/00.png" height="200" /> ► <img src="../listings/en-US/graphics/phone-screenshots/00.png" height="200" />
 
 To convert the normal screenshots to framed ones, you can use the `02_frameScreenshots.py` tool.
 

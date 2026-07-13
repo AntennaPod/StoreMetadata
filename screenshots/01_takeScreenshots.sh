@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 cleanup() {
     adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill && sleep 5; done
     $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager delete avd -n "AntennaPodScreenshots" || true
@@ -48,7 +50,7 @@ function resetDatabase() {
     theme=$1
     adb shell am force-stop de.danoeh.antennapod.debug
     adb shell rm /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db-journal || true
-    adb push app/src/play/play/screenshots/ScreenshotsDatabaseExport.db /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db
+    adb push "$SCRIPT_DIR/ScreenshotsDatabaseExport.db" /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db
     adb shell chmod 777 /data/data/de.danoeh.antennapod.debug/databases
     adb shell chmod 777 /data/data/de.danoeh.antennapod.debug/databases/Antennapod.db
     echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?><map>
@@ -91,7 +93,7 @@ function switchLanguage() {
 function createScreenshots() {
     language=$1
     screnshotPrefix=$2
-    folder="app/src/main/play/screenshots/raw"
+    folder="$SCRIPT_DIR/raw"
     mkdir -p "$folder/$language"
     switchLanguage $language
 
