@@ -14,9 +14,10 @@ langs_and_fonts = {
     'he-IL': 'Arimo-Bold',
     'nl-NL': 'Sarabun-Bold',
     'it-IT': 'Sarabun-Bold',
-    'es-ES': 'Sarabun-Bold'
-    'no-NO': 'Sarabun-Bold'
-    'hi-IN': 'Hind-Bold'
+    'es-ES': 'Sarabun-Bold',
+    'no-NO': 'Sarabun-Bold',
+    'hi-IN': 'Hind-Bold',
+    'fi-FI': 'Sarabun-Bold',
 }
 
 
