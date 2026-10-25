@@ -1,5 +1,1 @@
-∙ Rewrite playback service (@ByteHamster, @Sarnyxq and others) - this fixes many playback issues, but do report any regressions!
-∙ UI changes: rename “delete podcast” to “unsubscribe” (@ByteHamster); move Statistics screen to navigation (@amanjn38)
-∙ Multi-select: directly enter multi-select when long-pressing subscriptions; add more actions to (multi-)select menu (@ByteHamster)
-∙ Add Android Auto “For You” recommendations (@brianjcohen)
-∙ Plus an assortment of bug fixes & improvements!
+Thank you for being a beta tester. Report anything that looks wrong on forum.antennapod.org
